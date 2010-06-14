@@ -18,7 +18,7 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: login_database
+  database: dieteaser_development
   pool: 5
   username: root
   password: Pa55word
