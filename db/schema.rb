@@ -18,16 +18,18 @@ ActiveRecord::Schema.define(:version => 1) do
     t.string   "opt_in"
     t.integer  "height_cm"
     t.integer  "weight_lb"
-    t.datetime "date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "password"
     t.string   "firstname"
     t.string   "sex"
   end
 
   create_table "weights", :force => true do |t|
-    t.integer  "weight"
+    t.integer  "weight_lb"
     t.string   "email"
-    t.datetime "date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

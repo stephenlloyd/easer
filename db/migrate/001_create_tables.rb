@@ -8,7 +8,7 @@ class CreateTables < ActiveRecord::Migration
       t.string :opt_in
 	  t.integer :height_cm
 	  t.integer :weight_lb
-	  t.datetime :date
+	  t.timestamps 
 	  t.string :password
 	  t.string :firstname
 	  t.string :sex
@@ -18,7 +18,7 @@ class CreateTables < ActiveRecord::Migration
 	  t.integer :id
       t.integer :weight_lb
       t.string :email
-      t.datetime :date
+      t.timestamps :date
     end
   end
 

@@ -32,7 +32,16 @@ end
         if !session[:user_id]
 		redirect_to :action=> 'login'
         end
-        end
+        @all_weights = Weight.find(:all, :order => "updated_at ASC", :conditions => {:email => session[:user_id]})
+        @height_user = User.find(:first, :conditions => {:email => session[:user_id]})
+        @height = @height_user.height_cm;
+        @all_weights.each do |weight|
+          @weight_and_date =  {:weight => weight.weight_lb, :update_time => weight.updated_at};
+          puts 'weight = ' + @weight_and_date[:weight].to_s + ' update = ' + @weight_and_date[:update_time].to_s 
+          puts 'first = ' + @weight_and_date[:weight].to_s
+          puts 'height = ' + @height.to_s
+        end                                                                
+   end
 
 
       def signup
@@ -43,10 +52,9 @@ end
   end
 
 	def thankyou
-        params[:userform][:date] = DateTime.now
         params[:userform][:ip] = request.remote_ip 
 		@user = User.new(params[:userform])
-		@weight = Weight.new(:email => params[:userform][:email], :weight_lb => params[:userform][:weight_lb], :date=>DateTime.now)
+		@weight = Weight.new(:email => params[:userform][:email], :weight_lb => params[:userform][:weight_lb])
 		@weight.save
 		@user.save
         valid_user = User.find(:first,:conditions => ["email = ? and password = ?",@user.email, @user.password])
@@ -54,7 +62,7 @@ end
     end
 
   def newweight
-    @weight =  Weight.new(:email => session[:user_id], :weight_lb =>params[:updateform][:weight_lb], :date=>DateTime.now)
+    @weight =  Weight.new(:email => session[:user_id], :weight_lb =>params[:updateform][:weight_lb])
     @weight.save
     flash[:notice] = "updated"
     redirect_to :action=> 'mypage'
@@ -65,7 +73,6 @@ end
     @user = User.find(:all, :conditions => {:email => @currentemail})
     @allweights = Weight.find(:all, :conditions => {:email => @currentemail})
     flash[:test]  = @user
-
   end
 
   end
