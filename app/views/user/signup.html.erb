@@ -6,19 +6,22 @@
 
 <!--creates form, exectues the authenticate method when the submit button is clicked-->
 <%= form_tag :action=>'thankyou' %>
-First Name:
+<br>First Name:
 <%= text_field("userform", "firstname",:size=>"20" )%>
-Email:
-<%= text_field("userform", "email",:size=>"20" )%>
-Password:
-<%= password_field("userform", "password",:size=>"20" )%>
-Date of Birth:
-<%= date_select("userform", "dob",:size=>"20", :end_year=>Date.today.year-75, :start_year=>Date.today.year-15)%>
-Height cm:
-<%= text_field("userform", "height_cm",:size=>"3" )%>
-Weight lb:
-<%= text_field("userform", "weight_lb",:size=>"3" )%>
-Gender:
-<%= select( "userform", "sex", { "Male" => "1", "Female" => "2"}) %>
 
-<input type="submit" value=" Sign up " />
+<br>Email:
+<%= text_field("userform", "email",:size=>"20" )%>
+<br>Password:
+<%= password_field("userform", "password",:size=>"20" )%>
+<br>Date of Birth:
+<%= date_select("userform", "dob",:size=>"20", :end_year=>Date.today.year-75, :start_year=>Date.today.year-15)%>
+<br>Height cm:
+<%= text_field("userform", "height_cm",:size=>"3" )%>
+<br>Weight lb:
+<%= text_field("userform", "weight_lb",:size=>"3" )%>
+<br>Gender:
+<%= select( "userform", "sex", { "Male" => "1", "Female" => "2"}) %>
+<br>Opt in:
+<%= check_box( "userform", "opt_in")%>
+
+<br><input type="submit" value=" Sign up " />
