@@ -1,17 +1,18 @@
 class UserController < ApplicationController
+require 'bmi'
+require 'bmr'
 
-def authenticate
-		@user = User.new(params[:userform])
-		valid_user = User.find(:first,:conditions => ["email = ? and password = ?",@user.email, @user.password])
-
-		if valid_user
-			session[:user_id]=valid_user.email
-			redirect_to :action => 'mypage'
-		else
-			flash[:notice] = "Invalid Email/Password"
-			redirect_to :action=> 'login'
-		end
-end
+  def authenticate
+          @user = User.new(params[:userform])
+          valid_user = User.find(:first,:conditions => ["email = ? and password = ?",@user.email, @user.password])
+          if valid_user
+              session[:user_id]=valid_user.email
+              redirect_to :action => 'mypage'
+          else
+              flash[:notice] = "Invalid Email/Password"
+              redirect_to :action=> 'login'
+          end
+  end
 
   def login
   end
@@ -30,17 +31,18 @@ end
 
     def mypage
         if !session[:user_id]
-		redirect_to :action=> 'login'
+		  redirect_to :action=> 'login'
         end
         @all_weights = Weight.find(:all, :order => "updated_at ASC", :conditions => {:email => session[:user_id]})
-        @height_user = User.find(:first, :conditions => {:email => session[:user_id]})
-        @height = @height_user.height_cm;
-        @all_weights.each do |weight|
-          @weight_and_date =  {:weight => weight.weight_lb, :update_time => weight.updated_at};
-          puts 'weight = ' + @weight_and_date[:weight].to_s + ' update = ' + @weight_and_date[:update_time].to_s 
-          puts 'first = ' + @weight_and_date[:weight].to_s
-          puts 'height = ' + @height.to_s
-        end                                                                
+        @current_user = User.find(:first, :conditions => {:email => session[:user_id]})
+
+          @all_weights.each do |weight|
+            @weight_and_date =  {:weight => weight.weight_lb, :update_time => weight.updated_at};
+          end
+
+        @current_bmi = Bmi.calc_bmi(@weight_and_date[:weight], @current_user.height_cm)
+        @current_bmr = Bmr.calculate_bmr(@weight_and_date[:weight], @current_user.height_cm, @current_user.dob, @current_user.sex)
+
    end
 
 
@@ -60,20 +62,14 @@ end
         valid_user = User.find(:first,:conditions => ["email = ? and password = ?",@user.email, @user.password])
         session[:user_id]=valid_user.email
     end
+  
+    def newweight
+      @weight =  Weight.new(:email => session[:user_id], :weight_lb =>params[:updateform][:weight_lb])
+      @weight.save
+      flash[:notice] = "updated"
+      redirect_to :action=> 'mypage'
+    end
 
-  def newweight
-    @weight =  Weight.new(:email => session[:user_id], :weight_lb =>params[:updateform][:weight_lb])
-    @weight.save
-    flash[:notice] = "updated"
-    redirect_to :action=> 'mypage'
-  end
-
-  def bmi
-    @currentemail = session[:user_id]
-    @user = User.find(:all, :conditions => {:email => @currentemail})
-    @allweights = Weight.find(:all, :conditions => {:email => @currentemail})
-    flash[:test]  = @user
-  end
 
   end
 

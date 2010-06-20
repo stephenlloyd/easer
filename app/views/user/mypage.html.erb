@@ -11,4 +11,6 @@ hello <strong><%=session[:user_id]%></strong>.
 Enter your new Weight lb:
 <%= text_field("updateform", "weight_lb",:size=>"3" )%>
 <input type="submit" value=" update " />
-<%@weight%>
+
+<br> <%= 'weight = ' + @weight_and_date[:weight].to_s + ' date = ' + @weight_and_date[:update_time].to_date.to_s%>
+<br >  your current bmi is <strong><%=@current_bmi%></strong> .
