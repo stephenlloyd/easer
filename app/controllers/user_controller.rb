@@ -39,9 +39,9 @@ require 'bmr'
           @all_weights.each do |weight|
             @weight_and_date =  {:weight => weight.weight_lb, :update_time => weight.updated_at};
           end
-
+        @newBmr = Bmr.new()
         @current_bmi = Bmi.calc_bmi(@weight_and_date[:weight], @current_user.height_cm)
-        @current_bmr = Bmr.calculate_bmr(@weight_and_date[:weight], @current_user.height_cm, @current_user.dob, @current_user.sex)
+        @current_bmr = @newBmr.calc_bmr(@weight_and_date[:weight], @current_user.height_cm, @current_user.dob, @current_user.sex)
 
    end
 
