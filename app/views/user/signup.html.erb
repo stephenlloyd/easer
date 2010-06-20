@@ -5,10 +5,9 @@
 <% end %>
 
 <!--creates form, exectues the authenticate method when the submit button is clicked-->
-<%= form_tag :action=>'thankyou' %>
+<%= form_tag :action=>'authenticate_new_user' %>
 <br>First Name:
 <%= text_field("userform", "firstname",:size=>"20" )%>
-
 <br>Email:
 <%= text_field("userform", "email",:size=>"20" )%>
 <br>Password:

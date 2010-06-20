@@ -50,17 +50,28 @@ require 'bmr'
 	  if session[:user_id]
 		  reset_session
 		  redirect_to :action=> 'signup'
-	  end
-  end
+      end
+      end
 
-	def thankyou
-        params[:userform][:ip] = request.remote_ip 
+def authenticate_new_user
+        @allusers = User.find(:all, :conditions => {:email => params[:userform][:email]})
+        if !@allusers.empty?
+          flash[:notice] = "we already have that email address sorry"
+          redirect_to :action=> 'signup'
+        else
+        params[:userform][:ip] = request.remote_ip
 		@user = User.new(params[:userform])
 		@weight = Weight.new(:email => params[:userform][:email], :weight_lb => params[:userform][:weight_lb])
 		@weight.save
 		@user.save
         valid_user = User.find(:first,:conditions => ["email = ? and password = ?",@user.email, @user.password])
         session[:user_id]=valid_user.email
+         redirect_to :action=> 'thankyou'
+        end
+end
+
+	def thankyou
+          session[:user_id]
     end
   
     def newweight
