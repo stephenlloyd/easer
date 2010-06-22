@@ -20829,3 +20829,103 @@ Processing UserController#mypage (for 127.0.0.1 at 2010-06-22 14:53:52) [GET]
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
 Rendering user/mypage
 Completed in 100ms (View: 15, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-22 16:59:05) [GET]
+Rendering user/login
+Completed in 2060ms (View: 2059, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-22 16:59:08) [POST]
+  Parameters: {"authenticity_token"=>"Yy8luR9EuazrPbIGhgeX1HZDrNo/1Dsr4LnXSLmzE+g=", "userform"=>{"email"=>"test", "password"=>"test"}}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (7.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/login
+Completed in 20ms (DB: 11) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-22 16:59:08) [GET]
+Rendering user/login
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-22 16:59:16) [POST]
+  Parameters: {"authenticity_token"=>"Yy8luR9EuazrPbIGhgeX1HZDrNo/1Dsr4LnXSLmzE+g=", "userform"=>{"email"=>"test@uswitch.com", "password"=>"test"}}
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test@uswitch.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/login
+Completed in 13ms (DB: 5) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-22 16:59:16) [GET]
+Rendering user/login
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-22 16:59:24) [POST]
+  Parameters: {"authenticity_token"=>"Yy8luR9EuazrPbIGhgeX1HZDrNo/1Dsr4LnXSLmzE+g=", "userform"=>{"email"=>"test@test.com", "password"=>"test"}}
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 14ms (DB: 5) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-22 16:59:24) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering user/mypage
+Completed in 92ms (View: 9, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#mydiet (for 127.0.0.1 at 2010-06-22 16:59:37) [GET]
+
+LoadError (Expected C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/diet_controller.rb to define DietController):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-06-22 17:00:13) [GET]
+Rendering diet/mydiet
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/diet/mydiet]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-06-22 17:01:19) [GET]
+Rendering diet/mydiet
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://localhost/diet/mydiet]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-06-22 17:02:38) [GET]
+Rendering diet/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/diet/]
