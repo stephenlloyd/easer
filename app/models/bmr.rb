@@ -4,8 +4,9 @@
 class Bmr
 
   def calc_bmr(weight_lb, height_cm, age, sex)
-    @date = Date.now
-     @age = @date.year - age.year
+
+    @age = Time.now.year - age.year
+    
      if sex == "1"   #male
          (66 + ( 6.23 * weight_lb )) + ( 12.7 * (height_cm / 2.54)) - ( 6.76 * @age)
      else
