@@ -40,8 +40,10 @@ require 'bmr'
             @weight_and_date =  {:weight => weight.weight_lb, :update_time => weight.updated_at};
           end
         @newBmr = Bmr.new()
+        @newBmre = Bmr.new()
         @current_bmi = Bmi.calc_bmi(@weight_and_date[:weight], @current_user.height_cm)
         @current_bmr = @newBmr.calc_bmr(@weight_and_date[:weight], @current_user.height_cm, @current_user.dob, @current_user.sex)
+        @current_bmr2 = @newBmre.calc_bmr_for_session(session[:user_id])
 
    end
 
