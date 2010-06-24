@@ -1,3 +1,4 @@
+hello <strong><%=session[:user_id]%></strong>.
 <h1>Listing articles</h1>
 
 <table>
@@ -11,12 +12,14 @@
     <td><%=h article.title %></td>
     <td><%=h article.body %></td>
     <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+	<% if session[:user_id] == 'admin@dieteaser.com' %>
+		<td><%= link_to 'Edit', edit_article_path(article) %></td>
+		<td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+		<td><%= link_to 'New article', new_article_path %></td>
+	<% end %> 	
+    
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New article', new_article_path %>

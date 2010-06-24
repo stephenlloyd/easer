@@ -21592,3 +21592,1769 @@ Processing ArticlesController#show (for 127.0.0.1 at 2010-06-23 13:02:45) [GET]
 Rendering template within layouts/articles
 Rendering articles/show
 Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-06-24 12:01:15) [GET]
+Rendering user/signup
+Completed in 5650ms (View: 47, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-06-24 12:01:43) [POST]
+  Parameters: {"authenticity_token"=>"B7xwSWog/4J4M4O8Ze2CoOJWlsZipmMb73SKx/kNasU=", "userform"=>{"dob(1i)"=>"1995", "dob(2i)"=>"6", "firstname"=>"admin", "sex"=>"1", "height_cm"=>"180", "dob(3i)"=>"24", "weight_lb"=>"160", "password"=>"admin", "opt_in"=>"0", "email"=>"admin@dieteaser.com"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') [0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWeight Create (1.0ms)[0m   [0;1mINSERT INTO `weights` (`updated_at`, `weight_lb`, `email`, `created_at`) VALUES('2010-06-24 11:01:43', 160, 'admin@dieteaser.com', '2010-06-24 11:01:43')[0m
+  [4;35;1mSQL (80.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`dob`, `updated_at`, `firstname`, `height_cm`, `sex`, `ip`, `weight_lb`, `password`, `email`, `opt_in`, `created_at`) VALUES('1995-06-24', '2010-06-24 11:01:44', 'admin', 180, '1', '127.0.0.1', 160, 'admin', 'admin@dieteaser.com', '0', '2010-06-24 11:01:44')[0m
+  [4;36;1mSQL (13.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/thankyou
+Completed in 183ms (DB: 101) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#thankyou (for 127.0.0.1 at 2010-06-24 12:01:45) [GET]
+Rendering user/thankyou
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/user/thankyou]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#yourpage (for 127.0.0.1 at 2010-06-24 12:01:47) [GET]
+Redirected to http://localhost:3000/user/mypage
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/yourpage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 12:01:47) [GET]
+  [4;36;1mWeight Load (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering user/mypage
+Completed in 38ms (View: 15, DB: 4) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:05:04) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+ERROR: compiling _run_erb_app47views47articles47index46html46erb RAISED compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com link_to 'Edit', edit_arti...
+                              ^
+Function body:           def _run_erb_app47views47articles47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "hello <strong>"; @output_buffer.concat((session[:user_id]).to_s); @output_buffer.concat "</strong>.\n"
+@output_buffer.concat "<h1>Listing articles</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Title</th>\n"
+@output_buffer.concat "    <th>Body</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @articles.each do |article| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.title ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.body ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', article ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( if session[user_id] == admin@dieteaser.com link_to 'Edit', edit_article_path(article) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New article', new_article_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:26:in `compile!'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/articles_controller.rb:7:in `index'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com link_to 'Edit', edit_arti...
+                              ^) on line #15 of app/views/articles/index.html.erb:
+12:     <td><%=h article.title %></td>
+13:     <td><%=h article.body %></td>
+14:     <td><%= link_to 'Show', article %></td>
+15:     <td><%= if session[user_id] == admin@dieteaser.com link_to 'Edit', edit_article_path(article) %></td>
+16:     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+17:   </tr>
+18: <% end %>
+
+    app/views/articles/index.html.erb:26:in `compile!'
+    app/controllers/articles_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:05:07) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+ERROR: compiling _run_erb_app47views47articles47index46html46erb RAISED compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com link_to 'Edit', edit_arti...
+                              ^
+Function body:           def _run_erb_app47views47articles47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "hello <strong>"; @output_buffer.concat((session[:user_id]).to_s); @output_buffer.concat "</strong>.\n"
+@output_buffer.concat "<h1>Listing articles</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Title</th>\n"
+@output_buffer.concat "    <th>Body</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @articles.each do |article| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.title ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.body ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', article ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( if session[user_id] == admin@dieteaser.com link_to 'Edit', edit_article_path(article) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New article', new_article_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:26:in `compile!'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/articles_controller.rb:7:in `index'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com link_to 'Edit', edit_arti...
+                              ^) on line #15 of app/views/articles/index.html.erb:
+12:     <td><%=h article.title %></td>
+13:     <td><%=h article.body %></td>
+14:     <td><%= link_to 'Show', article %></td>
+15:     <td><%= if session[user_id] == admin@dieteaser.com link_to 'Edit', edit_article_path(article) %></td>
+16:     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+17:   </tr>
+18: <% end %>
+
+    app/views/articles/index.html.erb:26:in `compile!'
+    app/controllers/articles_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (65.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 12:05:12) [GET]
+
+ActionController::RoutingError (No route matches "/article/" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:05:17) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+ERROR: compiling _run_erb_app47views47articles47index46html46erb RAISED compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com link_to 'Edit', edit_arti...
+                              ^
+Function body:           def _run_erb_app47views47articles47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "hello <strong>"; @output_buffer.concat((session[:user_id]).to_s); @output_buffer.concat "</strong>.\n"
+@output_buffer.concat "<h1>Listing articles</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Title</th>\n"
+@output_buffer.concat "    <th>Body</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @articles.each do |article| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.title ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.body ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', article ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( if session[user_id] == admin@dieteaser.com link_to 'Edit', edit_article_path(article) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New article', new_article_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:26:in `compile!'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/articles_controller.rb:7:in `index'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com link_to 'Edit', edit_arti...
+                              ^) on line #15 of app/views/articles/index.html.erb:
+12:     <td><%=h article.title %></td>
+13:     <td><%=h article.body %></td>
+14:     <td><%= link_to 'Show', article %></td>
+15:     <td><%= if session[user_id] == admin@dieteaser.com link_to 'Edit', edit_article_path(article) %></td>
+16:     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+17:   </tr>
+18: <% end %>
+
+    app/views/articles/index.html.erb:26:in `compile!'
+    app/controllers/articles_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:05:29) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+ERROR: compiling _run_erb_app47views47articles47index46html46erb RAISED compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com link_to 'Edit', edit_arti...
+                              ^
+Function body:           def _run_erb_app47views47articles47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "hello <strong>"; @output_buffer.concat((session[:user_id]).to_s); @output_buffer.concat "</strong>.\n"
+@output_buffer.concat "<h1>Listing articles</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Title</th>\n"
+@output_buffer.concat "    <th>Body</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @articles.each do |article| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.title ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.body ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', article ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    #<td>"; @output_buffer.concat(( if session[user_id] == admin@dieteaser.com link_to 'Edit', edit_article_path(article) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New article', new_article_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:26:in `compile!'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/articles_controller.rb:7:in `index'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com link_to 'Edit', edit_arti...
+                              ^) on line #15 of app/views/articles/index.html.erb:
+12:     <td><%=h article.title %></td>
+13:     <td><%=h article.body %></td>
+14:     <td><%= link_to 'Show', article %></td>
+15:     #<td><%= if session[user_id] == admin@dieteaser.com link_to 'Edit', edit_article_path(article) %></td>
+16:     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+17:   </tr>
+18: <% end %>
+
+    app/views/articles/index.html.erb:26:in `compile!'
+    app/controllers/articles_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:05:37) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 24ms (View: 14, DB: 2) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:06:32) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+ERROR: compiling _run_erb_app47views47articles47index46html46erb RAISED compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com 
+                              ^
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:16: syntax error, unexpected '<', expecting ')'
+	<td><%= link_to 'Edit', edit_ar...
+	 ^
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:17: syntax error, unexpected ',', expecting ')'
+..., :confirm => 'Are you sure?', :method => :delete ).to_s); @...
+                              ^
+Function body:           def _run_erb_app47views47articles47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "hello <strong>"; @output_buffer.concat((session[:user_id]).to_s); @output_buffer.concat "</strong>.\n"
+@output_buffer.concat "<h1>Listing articles</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Title</th>\n"
+@output_buffer.concat "    <th>Body</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @articles.each do |article| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.title ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.body ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', article ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( if session[user_id] == admin@dieteaser.com 
+	<td><%= link_to 'Edit', edit_article_path(article) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New article', new_article_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:27:in `compile!'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/articles_controller.rb:7:in `index'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com 
+                              ^
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:16: syntax error, unexpected '<', expecting ')'
+	<td><%= link_to 'Edit', edit_ar...
+	 ^
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:17: syntax error, unexpected ',', expecting ')'
+..., :confirm => 'Are you sure?', :method => :delete ).to_s); @...
+                              ^) on line #15 of app/views/articles/index.html.erb:
+12:     <td><%=h article.title %></td>
+13:     <td><%=h article.body %></td>
+14:     <td><%= link_to 'Show', article %></td>
+15:     <%= if session[user_id] == admin@dieteaser.com 
+16: 	<td><%= link_to 'Edit', edit_article_path(article) %></td>
+17:     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+
+    app/views/articles/index.html.erb:27:in `compile!'
+    app/controllers/articles_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:06:41) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 100ms (View: 13, DB: 4) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:06:57) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 22ms (View: 12, DB: 4) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:07:17) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+ERROR: compiling _run_erb_app47views47articles47index46html46erb RAISED compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com ; @output_buffer.concat "...
+                              ^
+Function body:           def _run_erb_app47views47articles47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "hello <strong>"; @output_buffer.concat((session[:user_id]).to_s); @output_buffer.concat "</strong>.\n"
+@output_buffer.concat "<h1>Listing articles</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Title</th>\n"
+@output_buffer.concat "    <th>Body</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @articles.each do |article| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.title ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.body ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', article ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "     "; if session[user_id] == admin@dieteaser.com ; @output_buffer.concat "\n"
+@output_buffer.concat "\t<td>"; @output_buffer.concat(( link_to 'Edit', edit_article_path(article) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New article', new_article_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:27:in `compile!'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/articles_controller.rb:7:in `index'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com ; @output_buffer.concat "...
+                              ^) on line #15 of app/views/articles/index.html.erb:
+12:     <td><%=h article.title %></td>
+13:     <td><%=h article.body %></td>
+14:     <td><%= link_to 'Show', article %></td>
+15:      <%if session[user_id] == admin@dieteaser.com %>
+16: 	<td><%= link_to 'Edit', edit_article_path(article) %></td>
+17:     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+18:   </tr>
+
+    app/views/articles/index.html.erb:27:in `compile!'
+    app/controllers/articles_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:08:04) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+ERROR: compiling _run_erb_app47views47articles47index46html46erb RAISED compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com ; @output_buffer.concat "...
+                              ^
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:26: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47articles47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "hello <strong>"; @output_buffer.concat((session[:user_id]).to_s); @output_buffer.concat "</strong>.\n"
+@output_buffer.concat "<h1>Listing articles</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Title</th>\n"
+@output_buffer.concat "    <th>Body</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @articles.each do |article| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.title ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.body ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', article ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "\t"; if session[user_id] == admin@dieteaser.com ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<td>"; @output_buffer.concat(( link_to 'Edit', edit_article_path(article) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "\t";  end ; @output_buffer.concat " \t\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New article', new_article_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:26:in `compile!'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/articles_controller.rb:7:in `index'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com ; @output_buffer.concat "...
+                              ^
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:26: syntax error, unexpected kENSURE, expecting $end) on line #15 of app/views/articles/index.html.erb:
+12:     <td><%=h article.title %></td>
+13:     <td><%=h article.body %></td>
+14:     <td><%= link_to 'Show', article %></td>
+15: 	<%if session[user_id] == admin@dieteaser.com %>
+16: 		<td><%= link_to 'Edit', edit_article_path(article) %></td>
+17: 	<% end %> 	
+18:     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/articles/index.html.erb:26:in `compile!'
+    app/controllers/articles_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (131.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:08:28) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+ERROR: compiling _run_erb_app47views47articles47index46html46erb RAISED compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com ; @output_buffer.concat "...
+                              ^
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:26: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47articles47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "hello <strong>"; @output_buffer.concat((session[:user_id]).to_s); @output_buffer.concat "</strong>.\n"
+@output_buffer.concat "<h1>Listing articles</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<table>\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <th>Title</th>\n"
+@output_buffer.concat "    <th>Body</th>\n"
+@output_buffer.concat "  </tr>\n"
+@output_buffer.concat "\n"
+ @articles.each do |article| ; @output_buffer.concat "\n"
+@output_buffer.concat "  <tr>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.title ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat((h article.body ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Show', article ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "\t";  if session[user_id] == admin@dieteaser.com ; @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<td>"; @output_buffer.concat(( link_to 'Edit', edit_article_path(article) ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "\t";  end ; @output_buffer.concat " \t\n"
+@output_buffer.concat "    <td>"; @output_buffer.concat(( link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "  </tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'New article', new_article_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:26:in `compile!'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/articles_controller.rb:7:in `index'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:15: syntax error, unexpected tIVAR, expecting kDO or '{' or '('
+...on[user_id] == admin@dieteaser.com ; @output_buffer.concat "...
+                              ^
+C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/views/articles/index.html.erb:26: syntax error, unexpected kENSURE, expecting $end) on line #15 of app/views/articles/index.html.erb:
+12:     <td><%=h article.title %></td>
+13:     <td><%=h article.body %></td>
+14:     <td><%= link_to 'Show', article %></td>
+15: 	<% if session[user_id] == admin@dieteaser.com %>
+16: 		<td><%= link_to 'Edit', edit_article_path(article) %></td>
+17: 	<% end %> 	
+18:     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/articles/index.html.erb:26:in `compile!'
+    app/controllers/articles_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:08:41) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+
+ActionView::TemplateError (undefined local variable or method `user_id' for #<ActionView::Base:0x9189f44>) on line #15 of app/views/articles/index.html.erb:
+12:     <td><%=h article.title %></td>
+13:     <td><%=h article.body %></td>
+14:     <td><%= link_to 'Show', article %></td>
+15: 	<% if session[user_id] == 'admin@dieteaser.com' %>
+16: 		<td><%= link_to 'Edit', edit_article_path(article) %></td>
+17: 	<% end %> 	
+18:     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/articles/index.html.erb:15
+    app/views/articles/index.html.erb:10:in `each'
+    app/views/articles/index.html.erb:10
+    app/controllers/articles_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (133.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:09:14) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 22ms (View: 12, DB: 3) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 12:09:53) [GET]
+Rendering user/login
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 12:09:56) [POST]
+  Parameters: {"authenticity_token"=>"B7xwSWog/4J4M4O8Ze2CoOJWlsZipmMb73SKx/kNasU=", "userform"=>{"password"=>"test", "email"=>"test@test.com"}}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 13ms (DB: 2) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 12:09:56) [GET]
+  [4;36;1mWeight Load (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering user/mypage
+Completed in 26ms (View: 3, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:10:03) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 16ms (View: 8, DB: 2) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-06-24 12:10:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 19ms (View: 9, DB: 5) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:11:17) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 20ms (View: 10, DB: 4) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:11:26) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 19ms (View: 10, DB: 4) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-06-24 12:11:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 15ms (View: 4, DB: 4) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 12:11:56) [GET]
+Rendering user/login
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 12:12:09) [POST]
+  Parameters: {"authenticity_token"=>"B7xwSWog/4J4M4O8Ze2CoOJWlsZipmMb73SKx/kNasU=", "userform"=>{"password"=>"admin", "email"=>"admin@dieteaser.com"}}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 13ms (DB: 3) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 12:12:09) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering user/mypage
+Completed in 24ms (View: 3, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:12:18) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 16ms (View: 7, DB: 2) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:12:45) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 26ms (View: 15, DB: 4) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-06-24 12:12:47) [GET]
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 28ms (View: 18, DB: 4) | 200 OK [http://localhost/articles/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:12:54) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 19ms (View: 9, DB: 4) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-06-24 12:13:05) [GET]
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 19ms (View: 10, DB: 3) | 200 OK [http://localhost/articles/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-06-24 12:14:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 15ms (View: 5, DB: 5) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-06-24 12:15:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 18ms (View: 8, DB: 3) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:15:17) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 17ms (View: 7, DB: 3) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-06-24 12:15:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 112ms (View: 102, DB: 4) | 200 OK [http://localhost/articles/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2010-06-24 12:15:22) [PUT]
+  Parameters: {"article"=>{"body"=>"lots and lots of text. lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text. lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.\r\n\r\n lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text. lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.", "title"=>"this is a test article ", "imageurl"=>"http://www.dietsinreview.com/diet_column/wp-content/uploads/2008/08/fast-food.jpg"}, "commit"=>"Update", "authenticity_token"=>"B7xwSWog/4J4M4O8Ze2CoOJWlsZipmMb73SKx/kNasU=", "id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 15ms (DB: 4) | 302 Found [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-06-24 12:15:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 14ms (View: 4, DB: 2) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:15:38) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 16ms (View: 7, DB: 4) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-06-24 12:15:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 14ms (View: 4, DB: 3) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:15:47) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 18ms (View: 8, DB: 3) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-06-24 12:15:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 20ms (View: 11, DB: 5) | 200 OK [http://localhost/articles/1/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2010-06-24 12:15:51) [PUT]
+  Parameters: {"article"=>{"body"=>"lots and lots of text. lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text. lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.\r\n\r\n lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text. lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.lots and lots of text.", "title"=>"this is a test article ", "imageurl"=>"http://www.dietsinreview.com/diet_column/wp-content/uploads/2008/08/fast-food.jpg"}, "commit"=>"Update", "authenticity_token"=>"B7xwSWog/4J4M4O8Ze2CoOJWlsZipmMb73SKx/kNasU=", "id"=>"1"}
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 14ms (DB: 4) | 302 Found [http://localhost/articles/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-06-24 12:15:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 13ms (View: 3, DB: 5) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 12:15:53) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 16ms (View: 6, DB: 4) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-06-24 12:16:06) [GET]
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 19ms (View: 9, DB: 3) | 200 OK [http://localhost/articles/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 12:16:17) [GET]
+
+ActionController::RoutingError (No route matches "/login/" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 12:16:22) [GET]
+Rendering user/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 12:16:25) [POST]
+  Parameters: {"authenticity_token"=>"B7xwSWog/4J4M4O8Ze2CoOJWlsZipmMb73SKx/kNasU=", "userform"=>{"password"=>"test", "email"=>"test@test.com"}}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 13ms (DB: 4) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 12:16:25) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering user/mypage
+Completed in 26ms (View: 3, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-06-24 12:16:34) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 12:16:35) [GET]
+Rendering user/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 12:16:36) [POST]
+  Parameters: {"authenticity_token"=>"4FVJi64jL1v953h2xy/4ePLt/yEgR81zAbaykIvNmBQ=", "userform"=>{"password"=>"test", "email"=>"test@test.com"}}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 12ms (DB: 3) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 12:16:36) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering user/mypage
+Completed in 25ms (View: 3, DB: 6) | 200 OK [http://localhost/user/mypage]
