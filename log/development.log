@@ -25486,3 +25486,1009 @@ The error occurred while evaluating nil.[]):
 Rendered rescues/_trace (43.0ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (62.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 20:25:35) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 2387ms (View: 2387, DB: 78) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-06-24 20:25:47) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 20:25:50) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;36;1mWeight Load (187.2ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (62.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:44:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (62.4ms)
+Rendered rescues/_request_and_response (31.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#tools (for 127.0.0.1 at 2010-06-24 20:25:57) [GET]
+
+ActionController::UnknownAction (No action responded to tools. Actions: authenticate, authenticate_new_user, login, logout, mypage, newweight, signup, thankyou, and yourpage):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 20:26:00) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 20:26:08) [POST]
+  Parameters: {"authenticity_token"=>"PvIKQo2iSfQNrVCcSFAVErcPr8xRuCBTcVzX9nhx5RU=", "userform"=>{"email"=>"test@test.com", "password"=>"test"}}
+  [4;36;1mUser Columns (312.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (78.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 421ms (DB: 390) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 20:26:08) [GET]
+  [4;36;1mWeight Load (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (140.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 421ms (View: 16, DB: 140) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 20:26:14) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mMysql::Error: Table 'dieteaser_development.articles' doesn't exist: SELECT * FROM `articles` [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'dieteaser_development.articles' doesn't exist: SELECT * FROM `articles` ):
+  app/controllers/articles_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (62.4ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (140.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (93.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTables (1)
+Migrating to CreateArticles (2)
+  [4;36;1mSQL (608.4ms)[0m   [0;1mCREATE TABLE `articles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `imageurl` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (156.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mdescribe `articles`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `articles`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (31.2ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mdescribe `weights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `weights`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 20:27:13) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 20:27:20) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 125ms (View: 16, DB: 16) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-06-24 20:27:23) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/user/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 20:27:25) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 20:27:28) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:44:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 20:30:28) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:45:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 20:30:34) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 20:30:38) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:45:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 20:32:36) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:44:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 20:32:40) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:44:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 20:33:36) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:44:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 20:33:43) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:44:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 20:35:01) [POST]
+  Parameters: {"authenticity_token"=>"dM2KhCk6a4FtNc3VNonZXadgXQsCE0HKuud0k4aBaBk=", "userform"=>{"email"=>"test@test.com", "password"=>"test"}}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 21:55:54) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:44:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 21:56:40) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:44:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 21:57:10) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:44:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 21:57:14) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 21:58:55) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 21:59:06) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:44:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 21:59:22) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:44:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:00:39) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:45:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:01:49) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:47:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:03:37) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:47:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:04:20) [GET]
+
+ArgumentError (uncaught throw "{:session_id=>\"9a04f2d92ec44801b09e1ed80e815f38\"}"):
+  app/controllers/user_controller.rb:33:in `throw'
+  app/controllers/user_controller.rb:33:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:05:40) [GET]
+
+ArgumentError (uncaught throw "{:session_id=>\"9a04f2d92ec44801b09e1ed80e815f38\"}"):
+  app/controllers/user_controller.rb:33:in `throw'
+  app/controllers/user_controller.rb:33:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:07:06) [GET]
+
+ArgumentError (uncaught throw "{:session_id=>\"9a04f2d92ec44801b09e1ed80e815f38\"}"):
+  app/controllers/user_controller.rb:34:in `throw'
+  app/controllers/user_controller.rb:34:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:07:11) [GET]
+
+ArgumentError (uncaught throw "{:session_id=>\"9a04f2d92ec44801b09e1ed80e815f38\"}"):
+  app/controllers/user_controller.rb:34:in `throw'
+  app/controllers/user_controller.rb:34:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:08:34) [GET]
+Redirected to http://localhost:3000/user/login
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` IS NULL) ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:48:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:10:52) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 1) | 302 Found [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:10:52) [GET]
+
+ArgumentError (uncaught throw "{:session_id=>\"9a04f2d92ec44801b09e1ed80e815f38\"}"):
+  app/controllers/user_controller.rb:18:in `throw'
+  app/controllers/user_controller.rb:18:in `login'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:10:56) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 1) | 302 Found [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:11:23) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:11:23) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:12:18) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:12:18) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:12:50) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:12:50) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 22:12:54) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:12:58) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 1) | 302 Found [http://localhost/user/mypage]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:12:58) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 22:16:43) [POST]
+  Parameters: {"authenticity_token"=>"nisOWx1lwIPkD5+6MF/JxII/ILiaIJVLdFdov5fw2jw=", "userform"=>{"email"=>"test@test.com", "password"=>"test"}}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 13ms (DB: 4) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:16:43) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 24ms (View: 3, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#newweight (for 127.0.0.1 at 2010-06-24 22:17:01) [POST]
+  Parameters: {"authenticity_token"=>"nisOWx1lwIPkD5+6MF/JxII/ILiaIJVLdFdov5fw2jw=", "updateform"=>{"weight_lb"=>"165"}}
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWeight Create (0.0ms)[0m   [0;1mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(165, 'test@test.com', '2010-06-24 21:17:01', '2010-06-24 21:17:01')[0m
+  [4;35;1mSQL (129.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 141ms (DB: 132) | 302 Found [http://localhost/user/newweight]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:17:01) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 25ms (View: 3, DB: 5) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 22:17:15) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 10ms (View: 3, DB: 1) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-06-24 22:17:19) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:17:19) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 22:17:36) [POST]
+  Parameters: {"authenticity_token"=>"zAvGFqaBh2d7NhUegmXSIU0BzwRcQ2+7n3U+QJYiAg0=", "userform"=>{"email"=>"admin@dieteaser.com", "password"=>"admin"}}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/login
+Completed in 13ms (DB: 3) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:17:36) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 22:17:49) [POST]
+  Parameters: {"authenticity_token"=>"zAvGFqaBh2d7NhUegmXSIU0BzwRcQ2+7n3U+QJYiAg0=", "userform"=>{"email"=>"admin@dieteaser.com", "password"=>"admin"}}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/login
+Completed in 12ms (DB: 2) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:17:49) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:17:56) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:18:17) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 22:18:26) [POST]
+  Parameters: {"authenticity_token"=>"JxXGz42FHD7isy2fCZp+utQ47vMjzSuT64VaKufJIbY=", "userform"=>{"email"=>"admin@dieteaser.com", "password"=>"admin"}}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/login
+Completed in 13ms (DB: 3) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:18:26) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 22:18:47) [POST]
+  Parameters: {"authenticity_token"=>"JxXGz42FHD7isy2fCZp+utQ47vMjzSuT64VaKufJIbY=", "userform"=>{"email"=>"test@test.com", "password"=>"test"}}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 12ms (DB: 3) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:18:47) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 23ms (View: 3, DB: 4) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-06-24 22:18:50) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:18:50) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 22:19:02) [POST]
+  Parameters: {"authenticity_token"=>"2oYCG5pIWjJzvtsuigTPa+tZoQ8euLHGCc9g6R9axxs=", "userform"=>{"email"=>"admin@dieteaser.com", "password"=>"admin"}}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/login
+Completed in 12ms (DB: 3) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:19:02) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 22:19:28) [POST]
+  Parameters: {"authenticity_token"=>"2oYCG5pIWjJzvtsuigTPa+tZoQ8euLHGCc9g6R9axxs=", "userform"=>{"email"=>"test@test.com", "password"=>"test"}}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 12ms (DB: 3) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-24 22:19:28) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 24ms (View: 3, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-06-24 22:19:31) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:19:31) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:19:36) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-24 22:19:54) [POST]
+  Parameters: {"authenticity_token"=>"E3o0ql8RTfK8E3qL10UbJ+eMcr7Nq03E5uhmRCWliuU=", "userform"=>{"email"=>"admin@dieteaser.com", "password"=>"admin"}}
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/login
+Completed in 15ms (DB: 6) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-24 22:19:54) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-06-24 22:21:31) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 91ms (View: 89, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-06-24 22:22:01) [POST]
+  Parameters: {"authenticity_token"=>"E3o0ql8RTfK8E3qL10UbJ+eMcr7Nq03E5uhmRCWliuU=", "userform"=>{"firstname"=>"admin", "email"=>"admin@dieteaser.com", "password"=>"admin", "dob(1i)"=>"1985", "dob(2i)"=>"6", "dob(3i)"=>"24", "height_cm"=>"180", "weight_lb"=>"160", "sex"=>"1", "opt_in"=>"0"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') [0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWeight Create (0.0ms)[0m   [0mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(160, 'admin@dieteaser.com', '2010-06-24 21:22:01', '2010-06-24 21:22:01')[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO `users` (`email`, `dob`, `ip`, `opt_in`, `height_cm`, `weight_lb`, `created_at`, `updated_at`, `password`, `firstname`, `sex`) VALUES('admin@dieteaser.com', '1985-06-24', '127.0.0.1', '0', 180, 160, '2010-06-24 21:22:01', '2010-06-24 21:22:01', 'admin', 'admin', '1')[0m
+  [4;35;1mSQL (26.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/thankyou
+Completed in 124ms (DB: 102) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#thankyou (for 127.0.0.1 at 2010-06-24 22:22:01) [GET]
+Rendering template within layouts/application
+Rendering user/thankyou
+Completed in 21ms (View: 18, DB: 1) | 200 OK [http://localhost/user/thankyou]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-24 22:22:07) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/articles/]

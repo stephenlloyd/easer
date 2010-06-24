@@ -20,6 +20,7 @@ require 'bmr'
     def logout
 	  if session[:user_id]
 		  reset_session
+          session.clear
 		  redirect_to :action=> 'login'
 	  end
   end
@@ -30,15 +31,13 @@ require 'bmr'
     end
 
     def mypage
-        if !session[:user_id]
+        if session[:user_id].nil?
 		  redirect_to :action=> 'login'
+          return 
         end
         @all_weights = Weight.find(:all, :order => "updated_at ASC", :conditions => {:email => session[:user_id]})
         @current_user = User.find(:first, :conditions => {:email => session[:user_id]})
-
-          @all_weights.each do |weight|
-            @weight_and_date =  {:weight => weight.weight_lb, :update_time => weight.updated_at};
-          end
+          @all_weights.each { |weight|  @weight_and_date = {:weight => weight.weight_lb, :update_time => weight.updated_at}}
         @newBmr = Bmr.new()
         @newBmre = Bmr.new()
         @current_bmi = Bmi.calc_bmi(@weight_and_date[:weight], @current_user.height_cm)
