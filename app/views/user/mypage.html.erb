@@ -3,10 +3,7 @@
 <%= flash[:notice] %>
 </div>
 <% end %>
-hello <strong><%=session[:user_id]%></strong>.
 
-<!--#creates logout link, when the link is clicked, the controller is User and the method executed will be logout.-->
-<%= link_to "logout",:controller => "user", :action => "logout" %>
   <%= form_tag :action=>'newweight' %>
 Enter your new Weight lb:
 <%= text_field("updateform", "weight_lb",:size=>"3" )%>

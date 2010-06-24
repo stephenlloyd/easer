@@ -8,6 +8,16 @@
   <%= stylesheet_link_tag 'scaffold' %>
 </head>
 <body>
+ <p style="color: green"><%= notice %></p>
+ 
+    <% if !session[:user_id] %>
+        <%= link_to "sign up",:controller => "user", :action => "signup" %>
+        <%= link_to "login",:controller => "user", :action => "login" %>
+    <% else %>
+        hello <strong><%=session[:user_id]%></strong>.
+        <%= link_to "my account",:controller => "user", :action => "mypage" %>
+        <%= link_to "logout",:controller => "user", :action => "logout" %>
+    <% end %>
 
 <p style="color: green"><%= notice %></p>
 
