@@ -2,7 +2,10 @@ class ToolsController < ApplicationController
   require 'bmi'
 
   def calculate
-	@bmi = Bmi.calc_bmi(:weight => params[:toolsform][:weight_lb], :height => params[:toolsform][:height_cm])
+    @weight = params[:toolsform][:weight_lb].to_f
+    @height = params[:toolsform][:height_cm].to_f
+	@bmi = Bmi.calc_bmi(@weight, @height)
+    redirect_to :action=>''
   end
 
 end

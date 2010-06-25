@@ -28763,3 +28763,388 @@ ArgumentError (wrong number of arguments (1 for 2)):
 Rendered rescues/_trace (44.0ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-25 16:38:11) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 90ms (View: 90, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-25 16:38:16) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 10ms (View: 10, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:38:23) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"180", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/controllers/tools_controller.rb:5:in `calc_bmi'
+  app/controllers/tools_controller.rb:5:in `calculate'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:43:40) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"180", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/controllers/tools_controller.rb:5:in `calc_bmi'
+  app/controllers/tools_controller.rb:5:in `calculate'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:45:22) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"180", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/controllers/tools_controller.rb:7:in `calc_bmi'
+  app/controllers/tools_controller.rb:7:in `calculate'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (127.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:46:04) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"180", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/controllers/tools_controller.rb:7:in `calc_bmi'
+  app/controllers/tools_controller.rb:7:in `calculate'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:47:10) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"180", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+
+ActionView::MissingTemplate (Missing template tools/calculate.erb in view path app/views):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:48:11) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"180", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+Redirected to http://localhost:3000/tools/tools
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#tools (for 127.0.0.1 at 2010-06-25 16:48:11) [GET]
+
+ActionController::UnknownAction (No action responded to tools. Actions: calculate):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:48:24) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"180", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+Redirected to http://localhost:3000/tools/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-25 16:48:24) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:48:46) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"180", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+
+NameError (undefined local variable or method `refresh' for #<ToolsController:0x90a9f84>):
+  app/controllers/tools_controller.rb:8:in `calculate'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:49:22) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"180", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+
+ActionView::MissingTemplate (Missing template tools/calculate.erb in view path app/views):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:51:05) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"180", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+
+ActionView::MissingTemplate (Missing template tools/calculate.erb in view path app/views):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-25 16:53:44) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:53:48) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"80", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+Redirected to http://localhost:3000/tools/newweight
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#newweight (for 127.0.0.1 at 2010-06-25 16:53:48) [GET]
+
+ActionController::UnknownAction (No action responded to newweight. Actions: calculate):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:53:58) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"80", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+Redirected to http://localhost:3000/tools/
+Completed in 3ms (DB: 1) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-25 16:53:58) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:54:04) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"80", "weight_lb"=>"180"}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+Redirected to http://localhost:3000/tools/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-25 16:54:04) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:54:31) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"", "weight_lb"=>""}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+Redirected to http://localhost:3000/tools/
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-25 16:54:31) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:54:33) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"", "weight_lb"=>""}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+Redirected to http://localhost:3000/tools/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-25 16:54:33) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:54:33) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"", "weight_lb"=>""}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+Redirected to http://localhost:3000/tools/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-25 16:54:33) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:54:33) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"", "weight_lb"=>""}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+Redirected to http://localhost:3000/tools/
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-25 16:54:34) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-25 16:54:38) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"", "weight_lb"=>""}, "authenticity_token"=>"kEeQqA7vPAc4Nxj78kHQdYL8ZGHbKO2F1gNkFOZZ5jE="}
+Redirected to http://localhost:3000/tools/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-25 16:54:38) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/tools/]
