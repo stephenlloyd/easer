@@ -6,4 +6,4 @@ Enter your new Weight lb:
 Enter your new height in cm:
 <%= text_field("toolsform", "height_cm",:size=>"3" )%>
 <input type="submit" value=" calculate " />
-<strong><%=@bmi%></strong>
+<strong><%=session[:bmi]%></strong>
