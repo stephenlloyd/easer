@@ -7,7 +7,8 @@ class DietController < ApplicationController
       return
     end
         @bmr = Bmr.new()
-        @bmr = @bmr.calc_bmr_for_session(session[:user_id])
+        @bmr = @bmr.calc_bmr_for_session(session[:user_id]) - 500
+
   end
 
 end

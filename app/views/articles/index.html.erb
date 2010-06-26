@@ -19,7 +19,12 @@
 	<% end %> 	
     
   </tr>
+
 <% end %>
 </table>
+
+     	<% if session[:user_id] == 'admin@dieteaser.com' %>
+		<br><%= link_to 'Add New article', new_article_path %>
+	<% end %>
 
 <br />
