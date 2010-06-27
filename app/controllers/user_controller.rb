@@ -54,6 +54,7 @@ require 'bmr'
       end
       end
 
+      def authenticate_new_user
         @allusers = User.find(:all, :conditions => {:email => params[:userform][:email]})
         if !@allusers.empty?
           flash[:notice] = "we already have that email address sorry"

@@ -23,15 +23,15 @@ Enter your new Weight lb:
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Date');
       data.addColumn('number', 'Weight');
+      data.addColumn('number', 'bmi');
       data.addRows(4);
-      data.setValue(0, 0, '2004');
-      data.setValue(0, 1, 1000);
-      data.setValue(1, 0, '2005');
-      data.setValue(1, 1, 1170);
-      data.setValue(2, 0, '2006');
-      data.setValue(2, 1, 660);
-      data.setValue(3, 0, '2007');
-      data.setValue(3, 1, 1030);
+      data.setValue(0, 0, '15-10-2006');
+      data.setValue(0, 1, 180);
+      data.setValue(0, 2, 25);
+      data.setValue(1, 0, '15-10-2005');
+      data.setValue(1, 1, 170);
+      data.setValue(1, 2, 24);
+
 
       var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
       chart.draw(data, {width: 400, height: 240, title: 'Your Progress',
