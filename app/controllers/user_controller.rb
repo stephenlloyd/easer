@@ -37,7 +37,12 @@ require 'bmr'
         end
         @all_weights = Weight.find(:all, :order => "updated_at ASC", :conditions => {:email => session[:user_id]})
         @current_user = User.find(:first, :conditions => {:email => session[:user_id]})
-          @all_weights.each { |weight|  @weight_and_date = {:weight => weight.weight_lb, :update_time => weight.updated_at}}
+        @all_weights.each { |weight|  @weight_and_date = {:weight => weight.weight_lb, :update_time => weight.updated_at}}
+
+
+        @all_weights_count = @all_weights.count
+        @all_weights.each { |weight| @strinh = weight.weight_lb.to_s + "hello" }
+
         @newBmr = Bmr.new()
         @newBmre = Bmr.new()
         @current_bmi = Bmi.calc_bmi(@weight_and_date[:weight], @current_user.height_cm)

@@ -4,16 +4,6 @@
 </div>
 <% end %>
 
-  <%= form_tag :action=>'newweight' %>
-Enter your new Weight lb:
-<%= text_field("updateform", "weight_lb",:size=>"3" )%>
-<input type="submit" value=" update " />
-
-<br> <%= 'weight = ' + @weight_and_date[:weight].to_s + ' date = ' + @weight_and_date[:update_time].to_date.to_s%>
-<br >  your current bmi is <strong><%=@current_bmi%></strong>.
-<br >  your current bmr is <strong><%=@current_bmr%></strong>.
-<br >  your session current bmr is <strong><%=@current_bmr2%></strong>.
-
 <head>
   <script type="text/javascript" src="http://www.google.com/jsapi"></script>
   <script type="text/javascript">
@@ -23,25 +13,38 @@ Enter your new Weight lb:
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Date');
       data.addColumn('number', 'Weight');
-      data.addColumn('number', 'bmi');
-      data.addRows(4);
-      data.setValue(0, 0, '15-10-2006');
-      data.setValue(0, 1, 180);
-      data.setValue(0, 2, 25);
-      data.setValue(1, 0, '15-10-2005');
-      data.setValue(1, 1, 170);
-      data.setValue(1, 2, 24);
+      data.addRows(<%= @all_weights_count %>);
+        <% i=0
+        @all_weights.each do | weight|
+        %>
+
+      data.setValue(<%=i%>, 0, '<%=weight.updated_at.to_date.to_s %>');
+      data.setValue(<%=i%>, 1, <%=weight.weight_lb %>);
+
+       <% i = i + 1
+        end %>
 
 
       var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-      chart.draw(data, {width: 400, height: 240, title: 'Your Progress',
+      chart.draw(data, {width: 1000, height: 300, title: 'Your Progress',
                         hAxis: {title: 'Date', titleColor:'red'}
                        });
     }
   </script>
 </head>
 
+
+
 <body>
   <div id="chart_div"></div>
 </body>
 
+  <%= form_tag :action=>'newweight' %>
+Enter your new Weight lb:
+<%= text_field("updateform", "weight_lb",:size=>"3" )%>
+<input type="submit" value=" update " />
+
+<br> <%= 'weight = ' + @weight_and_date[:weight].to_s + ' date = ' + @weight_and_date[:update_time].to_date.to_s%>
+<br >  your current bmi is <strong><%=@current_bmi%></strong>.
+<br >  your current bmr is <strong><%=@current_bmr%></strong>.
+<br >  your session current bmr is <strong><%=@current_bmr2%></strong>.

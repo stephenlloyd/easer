@@ -32974,3 +32974,1729 @@ Processing IndexController#index (for 127.0.0.1 at 2010-06-28 10:16:28) [GET]
 Rendering template within layouts/application
 Rendering index/index
 Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (27.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 20:30:54) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 2402ms (View: 2400, DB: 40) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 20:31:07) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 20:31:10) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-06-28 20:31:12) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-06-28 20:31:17) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 1) | 302 Found [http://localhost/diet/mydiet]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-28 20:31:17) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 33ms (View: 31, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-28 20:31:19) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 29ms (View: 26, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 20:31:21) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 4ms (DB: 1) | 302 Found [http://localhost/user/mypage]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-28 20:31:21) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-28 20:31:24) [GET]
+  [4;36;1mArticle Load (89.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 148ms (View: 37, DB: 104) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 20:31:28) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/user/mypage]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-28 20:31:28) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 8ms (View: 6, DB: 2) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-28 20:31:31) [POST]
+  Parameters: {"authenticity_token"=>"KVNjoAPKHO6RADymgNIOhd5lZzU14GiNx39vkyY2vnw=", "userform"=>{"email"=>"test@test.com", "password"=>"test"}}
+  [4;36;1mUser Columns (19.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (32.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 68ms (DB: 52) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 20:31:31) [GET]
+  [4;36;1mWeight Load (31.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 284ms (View: 64, DB: 39) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:32:02) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw [#<Weight id: 1, weight_lb: 160, email: "test@test.com", created_at: "2010-06-20 16:32:39", updated_at: "2010-06-20 16:32:39">, #<Weight id: 2, weight_lb: 160, email: "test@test.com", created_at: "2010-06-20 20:32:39", updated_at: "2010-06-20 20:32:39">, #<Weight id: 3, weight_lb: 160, email: "test@test.com", created_at: "2010-06-20 20:34:49", updated_at: "2010-06-20 20:34:49">, #<Weight id: 4, weight_lb: 160, email: "test@test.com", created_at: "2010-06-20 20:35:35", updated_at: "2010-06-20 20:35:35">, #<Weight id: 5, weight_lb: 160, email: "test@test.com", created_at: "2010-06-20 20:39:04", updated_at: "2010-06-20 20:39:04">, #<Weight id: 6, weight_lb: 160, email: "test@test.com", created_at: "2010-06-20 20:39:14", updated_at: "2010-06-20 20:39:14">, #<Weight id: 7, weight_lb: 160, email: "test@test.com", created_at: "2010-06-20 20:39:21", updated_at: "2010-06-20 20:39:21">, #<Weight id: 8, weight_lb: 160, email: "test@test.com", created_at: "2010-06-20 20:39:55", updated_at: "2010-06-20 20:39:55">, #<Weight id: 9, weight_lb: 160, email: "test@test.com", created_at: "2010-06-20 20:40:46", updated_at: "2010-06-20 20:40:46">, #<Weight id: 10, weight_lb: 160, email: "test@test.com", created_at: "2010-06-20 20:41:16", updated_at: "2010-06-20 20:41:16">, #<Weight id: 18, weight_lb: 165, email: "test@test.com", created_at: "2010-06-24 21:17:01", updated_at: "2010-06-24 21:17:01">, #<Weight id: 21, weight_lb: 170, email: "test@test.com", created_at: "2010-06-26 12:59:38", updated_at: "2010-06-26 12:59:38">]):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (9.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:33:35) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 45ms (View: 6, DB: 9) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#newweight (for 127.0.0.1 at 2010-06-28 21:34:11) [POST]
+  Parameters: {"authenticity_token"=>"KVNjoAPKHO6RADymgNIOhd5lZzU14GiNx39vkyY2vnw=", "updateform"=>{"weight_lb"=>"170"}}
+  [4;35;1mWeight Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mSQL (39.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWeight Create (40.0ms)[0m   [0mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(170, 'test@test.com', '2010-06-28 20:34:11', '2010-06-28 20:34:11')[0m
+  [4;36;1mSQL (97.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 193ms (DB: 181) | 302 Found [http://localhost/user/newweight]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:34:11) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 25ms (View: 3, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-28 21:34:32) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 14ms (View: 6, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-06-28 21:34:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (2.0ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 38ms (View: 21, DB: 6) | 200 OK [http://localhost/articles/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-06-28 21:34:45) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/logout]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-28 21:34:45) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-28 21:34:59) [POST]
+  Parameters: {"authenticity_token"=>"uG5IqewJr0Jvys/w/G1yVKzVRKWZU4gHVOHB7yCexgc=", "userform"=>{"email"=>"admin@dieteaser.com", "password"=>"admin"}}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 13ms (DB: 3) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:34:59) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 24ms (View: 3, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-28 21:35:01) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 16ms (View: 6, DB: 4) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-06-28 21:35:10) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/diet/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-06-28 21:35:12) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering diet/mydiet
+Completed in 37ms (View: 12, DB: 8) | 200 OK [http://localhost/diet/mydiet]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 21:35:27) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 21:38:04) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:38:06) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+
+NoMethodError (undefined method `weight' for #<Weight:0x5016600>):
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:38:32) [GET]
+  [4;36;1mWeight Load (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+NoMethodError (undefined method `throws' for #<UserController:0x47a97c0>):
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:38:50) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+NoMethodError (undefined method `throws' for #<UserController:0x5266960>):
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:38:54) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+NoMethodError (undefined method `throws' for #<UserController:0x4a39160>):
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:38:54) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+NoMethodError (undefined method `throws' for #<UserController:0x2a75080>):
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:38:55) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+NoMethodError (undefined method `throws' for #<UserController:0x4ca9060>):
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (53.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:39:03) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+NoMethodError (undefined method `throws' for #<UserController:0x3db68e0>):
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (115.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:39:04) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+NoMethodError (undefined method `throws' for #<UserController:0x4f083e0>):
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:39:16) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw 160):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:40:20) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw 2):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (92.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:40:32) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw 2):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:40:37) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw 2):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:40:49) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw 2):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:40:50) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw 2):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:41:32) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw 2):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:41:33) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw 2):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:42:37) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw 2):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (96.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:42:38) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw 2):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (114.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:43:00) [GET]
+  [4;36;1mWeight Load (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 29ms (View: 4, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#newweight (for 127.0.0.1 at 2010-06-28 21:43:07) [POST]
+  Parameters: {"authenticity_token"=>"uG5IqewJr0Jvys/w/G1yVKzVRKWZU4gHVOHB7yCexgc=", "updateform"=>{"weight_lb"=>"18-"}}
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWeight Create (1.0ms)[0m   [0;1mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(18, 'admin@dieteaser.com', '2010-06-28 20:43:08', '2010-06-28 20:43:08')[0m
+  [4;35;1mSQL (73.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 93ms (DB: 78) | 302 Found [http://localhost/user/newweight]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:43:08) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 41ms (View: 3, DB: 10) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:43:16) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+
+ArgumentError (uncaught throw 3):
+  app/controllers/user_controller.rb:41:in `throw'
+  app/controllers/user_controller.rb:41:in `mypage'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:43:56) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 76ms (View: 12, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:44:28) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 49ms (View: 13, DB: 8) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:44:31) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 25ms (View: 3, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 21:44:44) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 60ms (View: 24, DB: 8) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:07:54) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+ERROR: compiling _run_erb_app47views47user47mypage46html46erb RAISED C:/Users/Steve/Desktop/easer/app/views/user/mypage.html.erb:27: syntax error, unexpected ')'
+...eights.each do |index, weight|).to_s); @output_buffer.concat...
+...                               ^
+C:/Users/Steve/Desktop/easer/app/views/user/mypage.html.erb:32: syntax error, unexpected keyword_end
+; @output_buffer.concat(( end ).to_s); @output_buffer.conc...
+                             ^
+C:/Users/Steve/Desktop/easer/app/views/user/mypage.html.erb:48: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/Steve/Desktop/easer/app/views/user/mypage.html.erb:50: syntax error, unexpected $end, expecting ')'
+Function body: #coding:CP850
+          def _run_erb_app47views47user47mypage46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  if flash[:notice] ; @output_buffer.concat "\n<div style=\"font-family:'Trebuchet MS'; color:#33ff00; font-size:14px;\">\n"
+
+; @output_buffer.concat(( flash[:notice] ).to_s); @output_buffer.concat "\n</div>\n"
+
+;  end ; @output_buffer.concat "\n\n  "
+
+; @output_buffer.concat(( form_tag :action=>'newweight' ).to_s); @output_buffer.concat "\nEnter your new Weight lb:\n"
+
+; @output_buffer.concat(( text_field("updateform", "weight_lb",:size=>"3" )).to_s); @output_buffer.concat "\n<input type=\"submit\" value=\" update \" />\n\n<br> "
+
+
+; @output_buffer.concat(( 'weight = ' + @weight_and_date[:weight].to_s + ' date = ' + @weight_and_date[:update_time].to_date.to_s).to_s); @output_buffer.concat "\n<br >  your current bmi is <strong>"
+; @output_buffer.concat((@current_bmi).to_s); @output_buffer.concat "</strong>.\n<br >  your current bmr is <strong>"
+; @output_buffer.concat((@current_bmr).to_s); @output_buffer.concat "</strong>.\n<br >  your session current bmr is <strong>"
+; @output_buffer.concat((@current_bmr2).to_s); @output_buffer.concat "</strong>.\n\n<head>\n  <script type=\"text/javascript\" src=\"http://www.google.com/jsapi\"></script>\n  <script type=\"text/javascript\">\n    google.load(\"visualization\", \"1\", {packages:[\"corechart\"]});\n    google.setOnLoadCallback(drawChart);\n    function drawChart() {\n      var data = new google.visualization.DataTable();\n      data.addColumn('string', 'Date');\n      data.addColumn('number', 'Weight');\n      data.addRows("
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( @all_weights_count ).to_s); @output_buffer.concat ");\n        "
+; @output_buffer.concat(( @all_weights.each do |index, weight|).to_s); @output_buffer.concat "\n\n      data.setValue("
+
+; @output_buffer.concat(( index).to_s); @output_buffer.concat ", 0, '15-10-2006');\n      data.setValue("
+; @output_buffer.concat(( index ).to_s); @output_buffer.concat ", 1, "; @output_buffer.concat((weight.weight_lb ).to_s); @output_buffer.concat ");\n\n       "
+
+; @output_buffer.concat(( end ).to_s); @output_buffer.concat "\n\n\n      var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));\n      chart.draw(data, {width: 400, height: 240, title: 'Your Progress',\n                        hAxis: {title: 'Date', titleColor:'red'}\n                       });\n    }\n  </script>\n</head>\n\n<body>\n  <div id=\"chart_div\"></div>\n</body>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:91:in `module_eval'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:91:in `compile!'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby191/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby191/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `block in call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Users/Steve/Desktop/easer/app/views/user/mypage.html.erb:27: syntax error, unexpected ')'
+...eights.each do |index, weight|).to_s); @output_buffer.concat...
+...                               ^
+C:/Users/Steve/Desktop/easer/app/views/user/mypage.html.erb:32: syntax error, unexpected keyword_end
+; @output_buffer.concat(( end ).to_s); @output_buffer.conc...
+                             ^
+C:/Users/Steve/Desktop/easer/app/views/user/mypage.html.erb:48: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/Steve/Desktop/easer/app/views/user/mypage.html.erb:50: syntax error, unexpected $end, expecting ')') on line #27 of app/views/user/mypage.html.erb:
+24:       data.addColumn('string', 'Date');
+25:       data.addColumn('number', 'Weight');
+26:       data.addRows(<%= @all_weights_count %>);
+27:         <%= @all_weights.each do |index, weight|%>
+28: 
+29:       data.setValue(<%= index%>, 0, '15-10-2006');
+30:       data.setValue(<%= index %>, 1, <%=weight.weight_lb %>);
+
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (103.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:08:54) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+
+ActionView::TemplateError (undefined method `weight_lb' for nil:NilClass) on line #30 of app/views/user/mypage.html.erb:
+27:         <% @all_weights.each do |index, weight|%>
+28: 
+29:       data.setValue(<%= index%>, 0, '15-10-2006');
+30:       data.setValue(<%= index %>, 1, <%=weight.weight_lb %>);
+31: 
+32:        <% end %>
+33: 
+
+    app/views/user/mypage.html.erb:30:in `block in _run_erb_app47views47user47mypage46html46erb'
+    app/views/user/mypage.html.erb:27:in `each'
+    app/views/user/mypage.html.erb:27
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (107.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:09:42) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 54ms (View: 16, DB: 10) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:11:15) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #28 of app/views/user/mypage.html.erb:
+25:       data.addColumn('number', 'Weight');
+26:       data.addRows(<%= @all_weights_count %>);
+27:         <% @all_weights.each do | weight|
+28:         i = i + 1%>
+29: 
+30:       data.setValue(<%=i%>, 0, '15-10-2006');
+31:       data.setValue(<%=i%>, 1, <%=weight.weight_lb %>);
+
+    app/views/user/mypage.html.erb:28:in `block in _run_erb_app47views47user47mypage46html46erb'
+    app/views/user/mypage.html.erb:27:in `each'
+    app/views/user/mypage.html.erb:27
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:12:16) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 87ms (View: 13, DB: 5) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:13:45) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 67ms (View: 26, DB: 10) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:15:28) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 34ms (View: 12, DB: 5) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:15:31) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 25ms (View: 3, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:16:53) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 71ms (View: 28, DB: 10) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:16:56) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 94ms (View: 6, DB: 9) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:18:05) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 50ms (View: 14, DB: 11) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:19:14) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 44ms (View: 12, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:19:54) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 62ms (View: 26, DB: 11) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:20:31) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 35ms (View: 13, DB: 5) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#newweight (for 127.0.0.1 at 2010-06-28 22:20:46) [POST]
+  Parameters: {"authenticity_token"=>"uG5IqewJr0Jvys/w/G1yVKzVRKWZU4gHVOHB7yCexgc=", "updateform"=>{"weight_lb"=>"180"}}
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWeight Create (0.0ms)[0m   [0mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(180, 'admin@dieteaser.com', '2010-06-28 21:20:46', '2010-06-28 21:20:46')[0m
+  [4;36;1mSQL (61.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 118ms (DB: 66) | 302 Found [http://localhost/user/newweight]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:20:46) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 32ms (View: 4, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-06-28 22:21:24) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: authenticate, authenticate_new_user, login, logout, mypage, newweight, signup, thankyou, and yourpage):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 22:21:32) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-06-28 22:21:33) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/diet/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-28 22:21:34) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:21:35) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 28ms (View: 4, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-28 22:21:38) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-06-28 22:21:40) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/diet/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-28 22:21:42) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:21:43) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 58ms (View: 4, DB: 5) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-28 22:21:44) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 24ms (View: 11, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-28 22:21:46) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 26ms (View: 12, DB: 4) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-28 22:22:06) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 25ms (View: 12, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:22:10) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 29ms (View: 4, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-06-28 22:22:12) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/diet/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 22:22:13) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-06-28 22:22:17) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/diet/]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 22:22:18) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 9ms (View: 6, DB: 2) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:22:23) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 59ms (View: 4, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-06-28 22:22:37) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-28 22:22:37) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:22:39) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-28 22:22:39) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-28 22:22:42) [POST]
+  Parameters: {"authenticity_token"=>"VIslYXOwPjG+UjUTZVuyJOqmovP8cTTzGMiyKK6vK/k=", "userform"=>{"email"=>"test@test.com", "password"=>"test"}}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 12ms (DB: 3) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:22:42) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 26ms (View: 4, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:23:31) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 36ms (View: 14, DB: 8) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#newweight (for 127.0.0.1 at 2010-06-28 22:24:01) [POST]
+  Parameters: {"authenticity_token"=>"VIslYXOwPjG+UjUTZVuyJOqmovP8cTTzGMiyKK6vK/k=", "updateform"=>{"weight_lb"=>"172"}}
+  [4;35;1mWeight Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWeight Create (1.0ms)[0m   [0mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(172, 'test@test.com', '2010-06-28 21:24:01', '2010-06-28 21:24:01')[0m
+  [4;36;1mSQL (35.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 91ms (DB: 41) | 302 Found [http://localhost/user/newweight]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:24:01) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 45ms (View: 8, DB: 11) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:25:26) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 36ms (View: 14, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:25:50) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 36ms (View: 14, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:26:51) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 56ms (View: 18, DB: 9) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-06-28 22:27:09) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/user/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-06-28 22:27:09) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-06-28 22:27:24) [POST]
+  Parameters: {"authenticity_token"=>"1cl5JtI7sqZzluJf+ysYDuyW9Hxc+lL2/tea5J6nZhE=", "userform"=>{"email"=>"admin@dieteaser.com", "password"=>"admin"}}
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 22ms (DB: 8) | 302 Found [http://localhost/user/authenticate]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:27:24) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 28ms (View: 4, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 22:27:45) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-28 22:27:46) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 16ms (View: 7, DB: 6) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:27:50) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 44ms (View: 6, DB: 13) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-28 22:27:52) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 22:27:53) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-06-28 22:27:54) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/diet/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-06-28 22:27:55) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering diet/mydiet
+Completed in 23ms (View: 3, DB: 7) | 200 OK [http://localhost/diet/mydiet]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 22:29:05) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 24ms (View: 3, DB: 5) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 23:27:52) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-06-28 23:27:54) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/diet/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-06-28 23:27:56) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering diet/mydiet
+Completed in 41ms (View: 5, DB: 9) | 200 OK [http://localhost/diet/mydiet]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-28 23:27:59) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-06-28 23:28:07) [POST]
+  Parameters: {"authenticity_token"=>"1cl5JtI7sqZzluJf+ysYDuyW9Hxc+lL2/tea5J6nZhE=", "toolsform"=>{"weight_lb"=>"180", "height_cm"=>"180"}}
+Redirected to http://localhost:3000/tools/
+Completed in 4ms (DB: 1) | 302 Found [http://localhost/tools/calculate]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-06-28 23:28:07) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 23:28:10) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 44ms (View: 6, DB: 10) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#newweight (for 127.0.0.1 at 2010-06-28 23:28:19) [POST]
+  Parameters: {"authenticity_token"=>"1cl5JtI7sqZzluJf+ysYDuyW9Hxc+lL2/tea5J6nZhE=", "updateform"=>{"weight_lb"=>"173"}}
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mWeight Create (0.0ms)[0m   [0mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(173, 'admin@dieteaser.com', '2010-06-28 22:28:19', '2010-06-28 22:28:19')[0m
+  [4;36;1mSQL (65.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 77ms (DB: 69) | 302 Found [http://localhost/user/newweight]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-06-28 23:28:19) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 25ms (View: 4, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-28 23:28:37) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 16ms (View: 5, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-06-28 23:28:38) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 25ms (View: 9, DB: 6) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-06-28 23:28:42) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/index/]
