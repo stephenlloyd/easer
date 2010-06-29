@@ -9,6 +9,7 @@
 
 <% @articles.each do |article| %>
   <tr>
+    <td><%= link_to image_tag(article.imageurl + "-small.jpg", :border=>0), :action => '' %> </td>
     <td><%=h article.title %></td>
     <td><%=h article.body %></td>
     <td><%= link_to 'Show', article %></td>
