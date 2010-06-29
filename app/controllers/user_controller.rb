@@ -40,8 +40,7 @@ require 'bmr'
         @all_weights.each { |weight|  @weight_and_date = {:weight => weight.weight_lb, :update_time => weight.updated_at}}
 
 
-        @all_weights_count = @all_weights.count
-        @all_weights.each { |weight| @strinh = weight.weight_lb.to_s + "hello" }
+        @all_weights_count = @all_weights.length
 
         @newBmr = Bmr.new()
         @newBmre = Bmr.new()

@@ -7,7 +7,7 @@
   <title>Articles: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'scaffold' %>
 </head>
-<%= link_to image_tag("logo-dummy.png", :border=>0), :action => '', %>
+<%= link_to image_tag("logo-dummy.png", :border=>0), :action => '' %>
 <body>
     <% if !session[:user_id] %>
         <%= link_to "sign up",:controller => "user", :action => "signup" %>
