@@ -39,15 +39,12 @@ require 'bmr'
         @current_user = User.find(:first, :conditions => {:email => session[:user_id]})
         @all_weights.each { |weight|  @weight_and_date = {:weight => weight.weight_lb, :update_time => weight.updated_at}}
 
-
         @all_weights_count = @all_weights.length
 
-        @newBmr = Bmr.new()
-        @newBmre = Bmr.new()
         @current_bmi = Bmi.calc_bmi(@weight_and_date[:weight], @current_user.height_cm)
-        @current_bmr = @newBmr.calc_bmr(@weight_and_date[:weight], @current_user.height_cm, @current_user.dob, @current_user.sex)
-        @current_bmr2 = @newBmre.calc_bmr_for_session(session[:user_id])
-
+        @current_bmr = @current_user.get_bmr.calculate
+        
+        @current_bmr2 = @current_user.get_bmr.calculate
    end
 
 
@@ -59,21 +56,22 @@ require 'bmr'
       end
 
       def authenticate_new_user
-        @allusers = User.find(:all, :conditions => {:email => params[:userform][:email]})
-        if !@allusers.empty?
+        all_users = User.find(:all, :conditions => {:email => params[:userform][:email]})
+        if !all_users.empty?
           flash[:notice] = "we already have that email address sorry"
-          redirect_to :action=> 'signup'
-        else
+          render :action => 'signup'
+          return
+        end
+                               
         params[:userform][:ip] = request.remote_ip
-		@user = User.new(params[:userform])
-		@weight = Weight.new(:email => params[:userform][:email], :weight_lb => params[:userform][:weight_lb])
-		@weight.save
-		@user.save
-        valid_user = User.find(:first,:conditions => ["email = ? and password = ?",@user.email, @user.password])
+		user = User.new(params[:userform])
+		weight = Weight.new(:email => params[:userform][:email], :weight_lb => params[:userform][:weight_lb])
+		weight.save
+		user.save
+        valid_user = User.find(:first,:conditions => ["email = ? and password = ?",user.email, user.password])
         session[:user_id]=valid_user.email
          redirect_to :action=> 'thankyou'
-        end
-end
+    end
 
 	def thankyou
           session[:user_id]
@@ -85,8 +83,6 @@ end
       flash[:notice] = "updated"
       redirect_to :action=> 'mypage'
     end
-
-
   end
 
 

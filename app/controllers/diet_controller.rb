@@ -6,9 +6,8 @@ class DietController < ApplicationController
       redirect_to :controller=>'user', :action=> 'login'
       return
     end
-        @bmr = Bmr.new()
-        @bmr = @bmr.calc_bmr_for_session(session[:user_id]) - 500
-
+        current_user = User.find(:first, :conditions => {:email => session[:user_id]})
+        @bmr = current_user.get_bmr.calculate - 500
   end
 
 end
