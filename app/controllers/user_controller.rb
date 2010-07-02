@@ -62,6 +62,12 @@ require 'bmr'
           render :action => 'signup'
           return
         end
+
+       if params[:userform][:weight_lb].blank?
+        flash[:notice] = 'You must give a weight'
+        redirect_to :action => 'signup'
+        return
+        end
                                
         params[:userform][:ip] = request.remote_ip
 		user = User.new(params[:userform])
@@ -83,7 +89,9 @@ require 'bmr'
       flash[:notice] = "updated"
       redirect_to :action=> 'mypage'
     end
+
   end
+
 
 
 

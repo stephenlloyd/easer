@@ -37579,3 +37579,1496 @@ Processing UserController#mypage (for 127.0.0.1 at 2010-07-01 09:02:21) [GET]
 Rendering template within layouts/application
 Rendering user/mypage
 Completed in 28ms (View: 4, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (26.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 12:05:27) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 2153ms (View: 2152, DB: 35) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-07-02 12:05:31) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 12ms (View: 11, DB: 1) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 12:05:32) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-02 12:05:37) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "toolsform"=>{"weight_lb"=>"180", "height_cm"=>"80"}}
+Redirected to http://localhost:3000/tools/
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 12:05:37) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-02 12:05:43) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "toolsform"=>{"weight_lb"=>"180", "height_cm"=>"180"}}
+Redirected to http://localhost:3000/tools/
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 12:05:43) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-02 12:05:46) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "toolsform"=>{"weight_lb"=>"4df", "height_cm"=>"dfd"}}
+Redirected to http://localhost:3000/tools/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 12:05:46) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-02 12:05:49) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "toolsform"=>{"weight_lb"=>"dfd", "height_cm"=>"dfd"}}
+Redirected to http://localhost:3000/tools/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 12:05:49) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-02 12:05:52) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "toolsform"=>{"weight_lb"=>"dffd", "height_cm"=>"dfd"}}
+Redirected to http://localhost:3000/tools/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 12:05:52) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-02 12:06:01) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "toolsform"=>{"weight_lb"=>"23dfd", "height_cm"=>"23dfd"}}
+Redirected to http://localhost:3000/tools/
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 12:06:01) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 12:06:08) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/mypage]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-02 12:06:08) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 13ms (View: 12, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 12:06:10) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:46) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:46) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:47) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:48) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:49) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:49) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:50) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:50) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:51) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:51) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:52) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:52) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:53) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:53) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:54) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:54) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:55) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:55) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:56) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:56) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:57) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:13:58) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:00) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:00) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:01) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:01) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:02) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:02) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:03) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:03) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:04) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:04) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:05) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:05) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:06) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:06) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:07) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:07) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:08) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:08) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:09) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:09) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:10) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:11) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:11) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:12) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:12) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:13) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:13) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:14) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:15) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:15) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:16) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:16) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:17) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:17) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:18) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:18) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:19) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:19) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:22) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:23) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:23) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:24) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:24) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:25) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:25) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:26) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:26) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:27) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:27) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:28) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:28) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:29) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:29) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:30) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:30) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:31) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:31) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:32) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:32) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:40) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:41) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:41) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:42) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:42) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:43) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:43) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 33ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:44) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:44) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:45) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:45) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:46) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:46) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:47) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:47) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:48) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:48) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:49) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:49) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:50) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:50) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:55) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:57) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:57) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:58) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:58) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:59) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:14:59) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:00) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:00) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:01) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:01) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:02) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:02) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:03) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:03) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:04) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:04) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:05) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:05) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:06) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:15:06) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:34) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:34) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:35) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:35) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:36) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:36) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:37) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:37) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:38) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:38) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:39) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:39) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:40) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:40) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:41) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:41) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:42) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:42) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:43) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:44) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:16:44) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 12:17:42) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 70ms (View: 68, DB: 1) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:17:46) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"", "email"=>"", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (288.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = '') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 393ms (View: 11, DB: 288) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:17:56) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"", "email"=>"", "password"=>"", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = '') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:18:07) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"sdfsd", "email"=>"", "password"=>"sdfsdf", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"180", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = '') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 22ms (View: 11, DB: 1) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:18:51) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"sdfsd", "email"=>"", "password"=>"sdfsdf", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"180", "sex"=>"1", "opt_in"=>"0"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = '') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:18:58) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"", "email"=>"newmail", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'newmail') [0m
+  [4;35;1mUser Columns (62.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mWeight Columns (27.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWeight Create (38.0ms)[0m   [0;1mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(NULL, 'newmail', '2010-07-02 11:18:59', '2010-07-02 11:18:59')[0m
+  [4;35;1mSQL (22.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (1.0ms)[0m   [0mINSERT INTO `users` (`email`, `dob`, `ip`, `opt_in`, `height_cm`, `weight_lb`, `created_at`, `updated_at`, `password`, `firstname`, `sex`) VALUES('newmail', '1995-07-02', '127.0.0.1', '0', NULL, NULL, '2010-07-02 11:18:59', '2010-07-02 11:18:59', 'test', '', '1')[0m
+  [4;36;1mSQL (17.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'newmail' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/thankyou
+Completed in 194ms (DB: 167) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#thankyou (for 127.0.0.1 at 2010-07-02 12:18:59) [GET]
+Rendering template within layouts/application
+Rendering user/thankyou
+Completed in 11ms (View: 10, DB: 3) | 200 OK [http://localhost/user/thankyou]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:21:29) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"", "email"=>"newmaile", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+SyntaxError (C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/user_controller.rb:94: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:21:56) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"", "email"=>"", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+SyntaxError (C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/user_controller.rb:94: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:42:29) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"sdfsd", "email"=>"dfsdfdsf", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+SyntaxError (C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/user_controller.rb:93: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:43:18) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"sdfsd", "email"=>"dfsdfdsf", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+SyntaxError (C:/Users/stephen.lloyd.USWITCH/Desktop/dieteaser2/easer/app/controllers/user_controller.rb:94: syntax error, unexpected keyword_end, expecting $end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:43:53) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"sdfsd", "email"=>"dfsdfdsf", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+NameError (undefined local variable or method `params' for UserController:Class):
+  app/controllers/user_controller.rb:74:in `<class:UserController>'
+  app/controllers/user_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:45:11) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"sdfsd", "email"=>"dfsdfdsf", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+NameError (undefined local variable or method `params' for UserController:Class):
+  app/controllers/user_controller.rb:74:in `<class:UserController>'
+  app/controllers/user_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:52:12) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"sdfsd", "email"=>"dfsdfdsf", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+NameError (undefined local variable or method `params' for UserController:Class):
+  app/controllers/user_controller.rb:74:in `<class:UserController>'
+  app/controllers/user_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:53:00) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"sdfsd", "email"=>"dfsdfdsf", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+NameError (undefined local variable or method `params' for UserController:Class):
+  app/controllers/user_controller.rb:74:in `<class:UserController>'
+  app/controllers/user_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:53:09) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"", "email"=>"", "password"=>"", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+NameError (undefined local variable or method `params' for UserController:Class):
+  app/controllers/user_controller.rb:74:in `<class:UserController>'
+  app/controllers/user_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:53:19) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+NameError (undefined local variable or method `params' for UserController:Class):
+  app/controllers/user_controller.rb:74:in `<class:UserController>'
+  app/controllers/user_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:58:41) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+NameError (undefined local variable or method `params' for UserController:Class):
+  app/controllers/user_controller.rb:74:in `<class:UserController>'
+  app/controllers/user_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 12:59:10) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+
+NameError (undefined local variable or method `params' for UserController:Class):
+  app/controllers/user_controller.rb:74:in `<class:UserController>'
+  app/controllers/user_controller.rb:1:in `<top (required)>'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 13:00:12) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"", "email"=>"zxva\\rdgb", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'zxva\\rdgb') [0m
+
+TypeError (can't convert Symbol into Integer):
+  app/controllers/user_controller.rb:66:in `[]'
+  app/controllers/user_controller.rb:66:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 13:03:11) [POST]
+  Parameters: {"authenticity_token"=>"MUfGgFhABRYSH1XPeLc411gE7ytwQ30KTIg8DvIAAiQ=", "userform"=>{"firstname"=>"", "email"=>"zxva\\rdgb d", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'zxva\\rdgb d') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 13:03:12) [GET]
+Redirected to http://localhost:3000/user/signup
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 13:03:14) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 54ms (View: 53, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 13:03:25) [POST]
+  Parameters: {"authenticity_token"=>"NQv1sZNlW6Oad4F7aM/lsTX+XmNu21uNPh23/xW3aEM=", "userform"=>{"firstname"=>"", "email"=>"zxvx\\cbxcb", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'zxvx\\cbxcb') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 13:03:25) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/user/signup]
