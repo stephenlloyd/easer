@@ -67,8 +67,32 @@ require 'bmr'
         flash[:notice] = 'You must give a weight'
         redirect_to :action => 'signup'
         return
+       end
+
+        if params[:userform][:height_cm].blank?
+        flash[:notice] = 'You must give a height'
+        redirect_to :action => 'signup'
+        return
         end
-                               
+
+        if params[:userform][:firstname].blank?
+        flash[:notice] = 'You must give a first name'
+        redirect_to :action => 'signup'
+        return
+        end
+
+        if params[:userform][:password].blank? ||  params[:userform_confirm][:password_two].blank?
+        flash[:notice] = 'You must give a password'
+        redirect_to :action => 'signup'
+        return
+        end
+
+        if params[:userform][:password] != params[:userform_confirm][:password_two]
+        flash[:notice] = 'Your passwords do not match'
+        redirect_to :action => 'signup'
+        return
+        end
+
         params[:userform][:ip] = request.remote_ip
 		user = User.new(params[:userform])
 		weight = Weight.new(:email => params[:userform][:email], :weight_lb => params[:userform][:weight_lb])

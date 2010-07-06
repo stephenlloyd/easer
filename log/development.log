@@ -39072,3 +39072,2787 @@ Processing UserController#signup (for 127.0.0.1 at 2010-07-02 13:03:25) [GET]
 Rendering template within layouts/application
 Rendering user/signup
 Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-02 20:24:18) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 2774ms (View: 2772, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 20:24:24) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 62ms (View: 60, DB: 1) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:24:27) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "password_two"=>"", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (17.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 130ms (View: 14, DB: 17) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:24:34) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"", "email"=>"", "password"=>"test", "password_two"=>"", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = '') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 20:24:34) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 26ms (View: 23, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:24:46) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "password_two"=>"", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 29ms (View: 16, DB: 1) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:25:12) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"hello", "email"=>"test@test.co,fdsdsfsd", "password"=>"test", "password_two"=>"jfjf", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"18-", "weight_lb"=>"128", "sex"=>"1", "opt_in"=>"0"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.co,fdsdsfsd') [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (67.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:25:39) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"hello", "email"=>"test@test.co,fdsdsfsd", "password"=>"kdsmd", "password_two"=>"jfjsdj", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"18-", "weight_lb"=>"128", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.co,fdsdsfsd') [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (65.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:27:27) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"hello", "email"=>"test@test.cofdsdsfsd", "password"=>"", "password_two"=>"", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"18-", "weight_lb"=>"128", "sex"=>"1", "opt_in"=>"0"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.cofdsdsfsd') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 20:27:28) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:27:44) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"tste", "email"=>"test@test.com", "password"=>"test", "password_two"=>"xcxdf", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"190", "weight_lb"=>"1890", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 41ms (View: 17, DB: 2) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:28:05) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"trst", "email"=>"sdgdsgd", "password"=>"testlo", "password_two"=>"kgdfk", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"29", "sex"=>"1", "opt_in"=>"0"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'sdgdsgd') [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (105.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:31:47) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"trst", "email"=>"sdgdsgd", "password"=>"zdfzf", "password_two"=>"pxpp", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"29", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'sdgdsgd') [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:32:55) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"trst", "email"=>"sdgdsgd", "password"=>"xfgdf", "password_two"=>"cvxcv", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"29", "sex"=>"1", "opt_in"=>"0"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'sdgdsgd') [0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+ActiveRecord::UnknownAttributeError (unknown attribute: password_two):
+  app/controllers/user_controller.rb:93:in `new'
+  app/controllers/user_controller.rb:93:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (119.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:33:44) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"trst", "email"=>"sdgdsgd", "password"=>"xfgd", "password_two"=>"dhgdfhg", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"29", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'sdgdsgd') [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:35:03) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"trst", "email"=>"sdgdsgd", "password"=>"zdfd", "password_two"=>"kozzddfks", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"29", "sex"=>"1", "opt_in"=>"0"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'sdgdsgd') [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (73.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:36:05) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"trst", "email"=>"sdgdsgd", "password"=>",kdzfk", "password_two"=>"tgdr", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"29", "sex"=>"1", "opt_in"=>"0"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'sdgdsgd') [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (72.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:36:49) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"tste", "email"=>"test@test.com", "password"=>"test", "password_two"=>"xcxdf", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"190", "weight_lb"=>"1890", "sex"=>"1", "opt_in"=>"0"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 89ms (View: 74, DB: 1) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:36:58) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"trst", "email"=>"sdgdsgd", "password"=>"dsafds", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"29", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>"xgdf"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'sdgdsgd') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 15ms (DB: 2) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 20:36:58) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:37:13) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"sgdf", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"56", "weight_lb"=>"45", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>"fjfdhd"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 28ms (View: 14, DB: 1) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:37:27) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"cgf", "email"=>"sdfdfdf", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"354", "weight_lb"=>"545", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>"mjfhxdfg"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'sdfdfdf') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 20:37:27) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 19ms (View: 16, DB: 1) | 200 OK [http://localhost/user/signup]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:38:07) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"sdfsdf", "email"=>"dsfdsd", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"354", "weight_lb"=>"34", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>"dzsfdsf"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'dsfdsd') [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (102.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:40:33) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"sdfsdf", "email"=>"dsfdsdkk", "password"=>"two", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"354", "weight_lb"=>"34", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>"two"}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'dsfdsdkk') [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (67.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:41:43) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"sdfsdf", "email"=>"dsfdsdkk", "password"=>"sdggs", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"354", "weight_lb"=>"34", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>"osofsdfo"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'dsfdsdkk') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 20:41:43) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 18ms (View: 16, DB: 1) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 20:42:13) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "userform"=>{"firstname"=>"test", "email"=>"test18@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"180", "weight_lb"=>"180", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>"test"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test18@test.com') [0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mWeight Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWeight Create (1.0ms)[0m   [0;1mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(180, 'test18@test.com', '2010-07-02 19:42:13', '2010-07-02 19:42:13')[0m
+  [4;35;1mSQL (71.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`email`, `dob`, `ip`, `opt_in`, `height_cm`, `weight_lb`, `created_at`, `updated_at`, `password`, `firstname`, `sex`) VALUES('test18@test.com', '1995-07-02', '127.0.0.1', '0', 180, 180, '2010-07-02 19:42:13', '2010-07-02 19:42:13', 'test', 'test', '1')[0m
+  [4;36;1mSQL (24.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test18@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/thankyou
+Completed in 154ms (DB: 116) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#thankyou (for 127.0.0.1 at 2010-07-02 20:42:13) [GET]
+Rendering template within layouts/application
+Rendering user/thankyou
+Completed in 16ms (View: 14, DB: 1) | 200 OK [http://localhost/user/thankyou]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#yourpage (for 127.0.0.1 at 2010-07-02 20:42:17) [GET]
+Redirected to http://localhost:3000/user/mypage
+Completed in 54ms (DB: 1) | 302 Found [http://localhost/user/yourpage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 20:42:17) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test18@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 50ms (View: 16, DB: 8) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#newweight (for 127.0.0.1 at 2010-07-02 20:42:24) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "updateform"=>{"weight_lb"=>"180"}}
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWeight Create (1.0ms)[0m   [0;1mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(180, 'test18@test.com', '2010-07-02 19:42:24', '2010-07-02 19:42:24')[0m
+  [4;35;1mSQL (85.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 98ms (DB: 88) | 302 Found [http://localhost/user/newweight]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 20:42:24) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test18@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 57ms (View: 6, DB: 9) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 20:42:28) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test18@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 38ms (View: 4, DB: 8) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 20:43:19) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test18@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 55ms (View: 16, DB: 8) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 20:44:44) [GET]
+  [4;36;1mWeight Load (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test18@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test18@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 151ms (View: 36, DB: 5) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 20:45:35) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 29ms (View: 27, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-02 20:45:40) [POST]
+  Parameters: {"authenticity_token"=>"QRKXDMZ+8OoBEZIVxO4nP+bOpWmzFyGfaMTDXU6yOLQ=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+Redirected to http://localhost:3000/tools/
+Completed in 3ms (DB: 1) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 20:45:40) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:45:44) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 22ms (View: 20, DB: 2) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:45:47) [GET]
+  [4;36;1mArticle Load (52.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 98ms (View: 28, DB: 62) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-02 20:45:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/test-image-small.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:45:50) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 25ms (View: 11, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-02 20:45:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/test-image-small.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-07-02 20:45:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 31ms (View: 16, DB: 5) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-02 20:45:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/test-image-large.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:46:00) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 25ms (View: 11, DB: 6) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-02 20:46:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/test-image-small.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:46:02) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 66ms (View: 52, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-02 20:46:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/test-image-small.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:46:03) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 25ms (View: 11, DB: 6) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-02 20:46:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/test-image-small.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:46:05) [GET]
+Rendering template within layouts/application
+Rendering index/index
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-07-02 20:47:13) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/user/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-07-02 20:47:20) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/user/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-02 20:47:20) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-07-02 20:47:34) [POST]
+  Parameters: {"authenticity_token"=>"5JsgadrUyXljxMP1D0LHMweDMwj8M5URSrCjSkPOnOE=", "userform"=>{"email"=>"admin@dieteaser.com", "password"=>"admin"}}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 21ms (DB: 4) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 20:47:35) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 36ms (View: 4, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:47:39) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 74ms (View: 62, DB: 4) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-02 20:47:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/test-image-small.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-07-02 20:47:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Completed in 45ms (View: 31, DB: 5) | 200 OK [http://localhost/articles/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2010-07-02 20:47:55) [PUT]
+  Parameters: {"authenticity_token"=>"5JsgadrUyXljxMP1D0LHMweDMwj8M5URSrCjSkPOnOE=", "article"=>{"title"=>"This is an Article", "body"=>"really long article about diets. really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets. really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.", "imageurl"=>"diet-in-veggies"}, "commit"=>"Update", "id"=>"1"}
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mArticle Update (25.0ms)[0m   [0mUPDATE `articles` SET `imageurl` = 'diet-in-veggies', `updated_at` = '2010-07-02 19:47:55' WHERE `id` = 1[0m
+  [4;36;1mSQL (69.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 118ms (DB: 101) | 302 Found [http://localhost/articles/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-07-02 20:47:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 26ms (View: 10, DB: 6) | 200 OK [http://localhost/articles/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:48:02) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 25ms (View: 12, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-07-02 20:48:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 22ms (View: 7, DB: 5) | 200 OK [http://localhost/articles/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:48:08) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 26ms (View: 12, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:48:10) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 27ms (View: 10, DB: 6) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:49:28) [GET]
+Rendering template within layouts/application
+Rendering index/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #9 of app/views/index/index.html.erb:
+6:     <th>Body</th>
+7:   </tr>
+8: 
+9: <% @articles.each do |article| %>
+10:   <tr>
+11:     <td><%= link_to image_tag(article.imageurl + "-small.jpg", :border=>0), :action => '' %> </td>
+12:     <td><%=h article.title %></td>
+
+    app/views/index/index.html.erb:9
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (89.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:51:35) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 29ms (View: 13, DB: 6) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:51:39) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 20ms (View: 10, DB: 4) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:52:13) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` ORDER BY articles.id DESC LIMIT 1[0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+
+ActionView::TemplateError (undefined method `each' for #<Article:0x3cdd640>) on line #9 of app/views/index/index.html.erb:
+6:     <th>Body</th>
+7:   </tr>
+8: 
+9: <% @articles.each do |article| %>
+10:   <tr>
+11:     <td><%= link_to image_tag(article.imageurl + "-small.jpg", :border=>0), :action => '' %> </td>
+12:     <td><%=h article.title %></td>
+
+    app/views/index/index.html.erb:9
+    app/controllers/index_controller.rb:6:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:53:06) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` ORDER BY articles.id DESC LIMIT 1[0m
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+
+NoMethodError (undefined method `html' for #<Article:0x4af0c00>):
+  app/controllers/index_controller.rb:7:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:53:40) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` ORDER BY articles.id DESC LIMIT 1[0m
+  [4;36;1mArticle Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+
+NoMethodError (undefined method `html' for #<Article:0x3bfb7a0>):
+  app/controllers/index_controller.rb:7:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (129.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:54:49) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 30ms (View: 14, DB: 6) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:55:19) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+Completed in 23ms (View: 15, DB: 3) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:55:38) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:55:43) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:56:02) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 29ms (View: 19, DB: 3) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:56:11) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 19ms (View: 9, DB: 4) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-07-02 20:56:12) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 20:56:14) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-07-02 20:56:15) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-07-02 20:56:16) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+Rendering template within layouts/application
+Rendering diet/mydiet
+Completed in 44ms (View: 13, DB: 6) | 200 OK [http://localhost/diet/mydiet]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 20:56:18) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 38ms (View: 5, DB: 10) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:56:22) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 32ms (View: 22, DB: 1) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:56:26) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 10ms (View: 3, DB: 1) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:56:30) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 21ms (View: 8, DB: 4) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:56:31) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+Completed in 53ms (View: 4, DB: 2) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 20:56:45) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;36;1mArticle Columns (39.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 66ms (View: 20, DB: 41) | 200 OK [http://localhost/articles/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-07-02 20:56:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 27ms (View: 11, DB: 5) | 200 OK [http://localhost/articles/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:56:56) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 18ms (View: 8, DB: 4) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:57:24) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 28ms (View: 19, DB: 3) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:58:49) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #13 of app/views/index/index.html.erb:
+10:   <tr>
+11:     <td><%= link_to image_tag(article.imageurl + "-small.jpg", :border=>0), :action => '' %> </td>
+12:     <td><%=h article.title %></td>
+13:     <td><%=h article.title article.body %></td>
+14:     <td><%= link_to 'Show', article %></td>
+15:   </tr>
+16: 
+
+    app/views/index/index.html.erb:13:in `block in _run_erb_app47views47index47index46html46erb'
+    app/views/index/index.html.erb:9:in `each'
+    app/views/index/index.html.erb:9
+    app/controllers/index_controller.rb:6:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (139.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:59:09) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 40ms (View: 27, DB: 4) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 20:59:46) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 40ms (View: 26, DB: 5) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 21:00:43) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 21:00:45) [GET]
+  [4;35;1mWeight Load (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 39ms (View: 4, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 21:01:35) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+ERROR: compiling _run_erb_app47views47index47index46html46erb RAISED C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:11: unknown regexp options - td
+unmatched close parenthesis: /strong> + article.body ).to_s); @output_buffer.concat "</
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:11: syntax error, unexpected $undefined
+...; @output_buffer.concat "</td>\n    <td>"
+...                               ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:12: unknown regexp options - tr
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:12: syntax error, unexpected $undefined
+..._buffer.concat "</td>\n  </tr>\n\n"
+...                               ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n</table>"
+                                 ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: unterminated regexp meets end of file
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: syntax error, unexpected $end, expecting ')'
+Function body: #coding:CP850
+          def _run_erb_app47views47index47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "Welcome to DietEaser.\n\n<table>\n  <tr>\n    <th>Body</th>\n  </tr>\n\n"
+
+
+
+
+
+
+;  @articles.each do |article| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( link_to image_tag(article.imageurl + "-small.jpg", :border=>0), :action => '' ).to_s); @output_buffer.concat " </td>\n    <td>"
+; @output_buffer.concat((h <strong>article.title</strong> + article.body ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Show', article ).to_s); @output_buffer.concat "</td>\n  </tr>\n\n"
+
+
+;  end ; @output_buffer.concat "\n</table>"
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:91:in `module_eval'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:91:in `compile!'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby191/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `block in custom'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `block in respond'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/Steve/Desktop/easer/app/controllers/index_controller.rb:6:in `index'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby191/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `block in call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:11: unknown regexp options - td
+unmatched close parenthesis: /strong> + article.body ).to_s); @output_buffer.concat "</
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:11: syntax error, unexpected $undefined
+...; @output_buffer.concat "</td>\n    <td>"
+...                               ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:12: unknown regexp options - tr
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:12: syntax error, unexpected $undefined
+..._buffer.concat "</td>\n  </tr>\n\n"
+...                               ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n</table>"
+                                 ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: unterminated regexp meets end of file
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: syntax error, unexpected $end, expecting ')') on line #11 of app/views/index/index.html.erb:
+8: <% @articles.each do |article| %>
+9:   <tr>
+10:     <td><%= link_to image_tag(article.imageurl + "-small.jpg", :border=>0), :action => '' %> </td>
+11:     <td><%=h <strong>article.title</strong> + article.body %></td>
+12:     <td><%= link_to 'Show', article %></td>
+13:   </tr>
+14: 
+
+    app/controllers/index_controller.rb:6:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (98.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 21:02:19) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+ERROR: compiling _run_erb_app47views47index47index46html46erb RAISED C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:11: syntax error, unexpected '<'
+; @output_buffer.concat(( <strong> article.title</strong...
+                           ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:11: unknown regexp options - td
+unmatched close parenthesis: /strong> + article.body ).to_s); @output_buffer.concat "</
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:11: syntax error, unexpected $undefined
+...; @output_buffer.concat "</td>\n    <td>"
+...                               ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:12: unknown regexp options - tr
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:12: syntax error, unexpected $undefined
+..._buffer.concat "</td>\n  </tr>\n\n"
+...                               ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n</table>"
+                                 ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: unterminated regexp meets end of file
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: syntax error, unexpected $end, expecting ')'
+Function body: #coding:CP850
+          def _run_erb_app47views47index47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "Welcome to DietEaser.\n\n<table>\n  <tr>\n    <th>Body</th>\n  </tr>\n\n"
+
+
+
+
+
+
+;  @articles.each do |article| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( link_to image_tag(article.imageurl + "-small.jpg", :border=>0), :action => '' ).to_s); @output_buffer.concat " </td>\n    <td>"
+; @output_buffer.concat(( <strong> article.title</strong> + article.body ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Show', article ).to_s); @output_buffer.concat "</td>\n  </tr>\n\n"
+
+
+;  end ; @output_buffer.concat "\n</table>"
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:91:in `module_eval'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:91:in `compile!'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby191/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `block in custom'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `block in respond'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Users/Steve/Desktop/easer/app/controllers/index_controller.rb:6:in `index'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby191/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action_with_flash'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `block in call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+C:/Ruby191/lib/ruby/gems/1.9.1/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:11: syntax error, unexpected '<'
+; @output_buffer.concat(( <strong> article.title</strong...
+                           ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:11: unknown regexp options - td
+unmatched close parenthesis: /strong> + article.body ).to_s); @output_buffer.concat "</
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:11: syntax error, unexpected $undefined
+...; @output_buffer.concat "</td>\n    <td>"
+...                               ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:12: unknown regexp options - tr
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:12: syntax error, unexpected $undefined
+..._buffer.concat "</td>\n  </tr>\n\n"
+...                               ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n</table>"
+                                 ^
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: unterminated regexp meets end of file
+C:/Users/Steve/Desktop/easer/app/views/index/index.html.erb:15: syntax error, unexpected $end, expecting ')') on line #11 of app/views/index/index.html.erb:
+8: <% @articles.each do |article| %>
+9:   <tr>
+10:     <td><%= link_to image_tag(article.imageurl + "-small.jpg", :border=>0), :action => '' %> </td>
+11:     <td><%= <strong> article.title</strong> + article.body %></td>
+12:     <td><%= link_to 'Show', article %></td>
+13:   </tr>
+14: 
+
+    app/controllers/index_controller.rb:6:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (152.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 21:02:35) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 29ms (View: 18, DB: 3) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 21:04:11) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 40ms (View: 27, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 21:04:40) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 42ms (View: 28, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 21:05:07) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+
+ActionView::TemplateError (undefined method `+@' for " ":String) on line #11 of app/views/index/index.html.erb:
+8: <% @articles.each do |article| %>
+9:   <tr>
+10:     <td><%= link_to image_tag(article.imageurl + "-small.jpg", :border=>0), :action => '' %> </td>
+11:     <td><strong><%=article.title %> </strong> <%+ " " + article.body %></td>
+12:     <td><%= link_to 'Show', article %></td>
+13:   </tr>
+14: 
+
+    app/views/index/index.html.erb:11:in `block in _run_erb_app47views47index47index46html46erb'
+    app/views/index/index.html.erb:8:in `each'
+    app/views/index/index.html.erb:8
+    app/controllers/index_controller.rb:6:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 21:05:36) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 38ms (View: 26, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (8.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 21:06:05) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 40ms (View: 26, DB: 12) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 22:50:08) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 47ms (View: 38, DB: 4) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 22:50:14) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 16ms (View: 6, DB: 4) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-07-02 22:50:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 28ms (View: 16, DB: 4) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 22:50:30) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 17ms (View: 8, DB: 4) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-07-02 22:50:35) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 15ms (View: 14, DB: 1) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-07-02 22:50:39) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 1) | 302 Found [http://localhost/diet/mydiet]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-02 22:50:39) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 3012ms (View: 3010, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 22:50:46) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 17ms (View: 16, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-02 22:50:55) [POST]
+  Parameters: {"authenticity_token"=>"g/H+i1ORmu3KpkuGza7dMVBx53odwmljokD6JqaxmSw=", "toolsform"=>{"weight_lb"=>"180", "height_cm"=>"180"}}
+Redirected to http://localhost:3000/tools/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 22:50:55) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 22:50:59) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-02 22:50:59) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 22:51:01) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 42ms (View: 29, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-02 22:51:10) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 22:51:13) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 65ms (View: 62, DB: 2) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 22:51:17) [POST]
+  Parameters: {"authenticity_token"=>"g/H+i1ORmu3KpkuGza7dMVBx53odwmljokD6JqaxmSw=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 83ms (View: 16, DB: 2) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-02 22:51:25) [POST]
+  Parameters: {"authenticity_token"=>"g/H+i1ORmu3KpkuGza7dMVBx53odwmljokD6JqaxmSw=", "userform"=>{"firstname"=>"", "email"=>"testsddvdv@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"2", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'testsddvdv@test.com') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-02 22:51:25) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-02 22:51:34) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-07-02 22:51:37) [POST]
+  Parameters: {"authenticity_token"=>"g/H+i1ORmu3KpkuGza7dMVBx53odwmljokD6JqaxmSw=", "userform"=>{"email"=>"test@test.com", "password"=>"test"}}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 21ms (DB: 5) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 22:51:37) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 89ms (View: 54, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#newweight (for 127.0.0.1 at 2010-07-02 22:52:05) [POST]
+  Parameters: {"authenticity_token"=>"g/H+i1ORmu3KpkuGza7dMVBx53odwmljokD6JqaxmSw=", "updateform"=>{"weight_lb"=>"172"}}
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWeight Create (1.0ms)[0m   [0;1mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(172, 'test@test.com', '2010-07-02 21:52:05', '2010-07-02 21:52:05')[0m
+  [4;35;1mSQL (35.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 49ms (DB: 39) | 302 Found [http://localhost/user/newweight]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 22:52:05) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 60ms (View: 9, DB: 10) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-07-02 22:52:21) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-07-02 22:52:22) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mWeight Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+Rendering template within layouts/application
+Rendering diet/mydiet
+Completed in 44ms (View: 14, DB: 8) | 200 OK [http://localhost/diet/mydiet]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-07-02 22:52:33) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/user/logout]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-02 22:52:33) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-07-02 22:52:37) [POST]
+  Parameters: {"authenticity_token"=>"0H3VVThQPz4ztOZ7XcsJXSzn369UZ488WhIYfR4SNG0=", "userform"=>{"email"=>"test@test.com", "password"=>"test"}}
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 31ms (DB: 5) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 22:52:37) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 74ms (View: 42, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 22:52:39) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 26ms (View: 11, DB: 6) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 22:52:43) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 26ms (View: 13, DB: 3) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-07-02 22:52:53) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/user/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-02 22:52:53) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-07-02 22:53:09) [POST]
+  Parameters: {"authenticity_token"=>"B75Hesy+0SCCQ4+veDm3LjOVR/bkOdaDnOae7L6YMsI=", "userform"=>{"email"=>"admin@dieteaser.com", "password"=>"admin"}}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 20ms (DB: 3) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 22:53:09) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 35ms (View: 4, DB: 8) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 22:53:15) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 26ms (View: 12, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2010-07-02 22:53:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/edit
+Completed in 61ms (View: 45, DB: 4) | 200 OK [http://localhost/articles/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2010-07-02 22:53:26) [PUT]
+  Parameters: {"authenticity_token"=>"B75Hesy+0SCCQ4+veDm3LjOVR/bkOdaDnOae7L6YMsI=", "article"=>{"title"=>"This is an Article", "body"=>"really long article about diets. really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets. really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.really long article about diets.", "imageurl"=>"diet-in-veggies"}, "commit"=>"Update", "id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 21ms (DB: 4) | 302 Found [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-07-02 22:53:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 22ms (View: 8, DB: 4) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-02 22:53:31) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 28ms (View: 12, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-07-02 22:53:34) [GET]
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 37ms (View: 25, DB: 4) | 200 OK [http://localhost/articles/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-02 22:53:44) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 26ms (View: 12, DB: 5) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-02 22:53:49) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-02 22:53:57) [GET]
+  [4;35;1mWeight Load (1.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 35ms (View: 5, DB: 5) | 200 OK [http://localhost/user/mypage]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#index (for 127.0.0.1 at 2010-07-02 22:54:32) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: authenticate, authenticate_new_user, login, logout, mypage, newweight, signup, thankyou, and yourpage):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (27.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-03 13:02:32) [GET]
+  [4;36;1mArticle Load (166.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (25.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 2543ms (View: 2345, DB: 249) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-07-03 13:02:59) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 12ms (View: 11, DB: 1) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-07-03 13:03:03) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/diet/mydiet]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-03 13:03:03) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 81ms (View: 80, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-03 13:03:05) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-03 13:03:13) [POST]
+  Parameters: {"authenticity_token"=>"MlmjK5gnXQmCWLGJu5SKKn7k2q+QtS8ZL49OGw7hNqw=", "toolsform"=>{"weight_lb"=>"180", "height_cm"=>"180"}}
+Redirected to http://localhost:3000/tools/
+Completed in 4ms (DB: 1) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-03 13:03:13) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-03 13:03:17) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-03 13:03:28) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/user/mypage]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-03 13:03:28) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-03 13:03:44) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-03 13:03:51) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 139ms (View: 136, DB: 1) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-03 13:03:56) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-07-03 13:04:00) [POST]
+  Parameters: {"authenticity_token"=>"MlmjK5gnXQmCWLGJu5SKKn7k2q+QtS8ZL49OGw7hNqw=", "userform"=>{"email"=>"test@test.com", "password"=>"test"}}
+  [4;36;1mUser Columns (17.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (41.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 130ms (DB: 59) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-03 13:04:00) [GET]
+  [4;36;1mWeight Load (25.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 153ms (View: 28, DB: 31) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#newweight (for 127.0.0.1 at 2010-07-03 13:04:20) [POST]
+  Parameters: {"authenticity_token"=>"MlmjK5gnXQmCWLGJu5SKKn7k2q+QtS8ZL49OGw7hNqw=", "updateform"=>{"weight_lb"=>"160"}}
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWeight Create (46.0ms)[0m   [0;1mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(160, 'test@test.com', '2010-07-03 12:04:20', '2010-07-03 12:04:20')[0m
+  [4;35;1mSQL (34.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 95ms (DB: 83) | 302 Found [http://localhost/user/newweight]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-03 13:04:20) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 37ms (View: 4, DB: 7) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-07-03 13:05:05) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-07-03 13:05:07) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mWeight Load (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+Rendering template within layouts/application
+Rendering diet/mydiet
+Completed in 42ms (View: 10, DB: 5) | 200 OK [http://localhost/diet/mydiet]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-03 13:05:29) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 56ms (View: 41, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-07-03 13:05:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 59ms (View: 13, DB: 5) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-03 13:05:51) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-07-03 13:05:53) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-07-03 13:05:55) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mWeight Load (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mWeight Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+Rendering template within layouts/application
+Rendering diet/mydiet
+Completed in 26ms (View: 3, DB: 4) | 200 OK [http://localhost/diet/mydiet]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-03 13:05:57) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 27ms (View: 10, DB: 6) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-03 13:06:00) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 53ms (View: 8, DB: 9) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#newweight (for 127.0.0.1 at 2010-07-03 13:06:36) [POST]
+  Parameters: {"authenticity_token"=>"MlmjK5gnXQmCWLGJu5SKKn7k2q+QtS8ZL49OGw7hNqw=", "updateform"=>{"weight_lb"=>"140"}}
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWeight Create (1.0ms)[0m   [0;1mINSERT INTO `weights` (`weight_lb`, `email`, `created_at`, `updated_at`) VALUES(140, 'test@test.com', '2010-07-03 12:06:36', '2010-07-03 12:06:36')[0m
+  [4;35;1mSQL (64.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 83ms (DB: 69) | 302 Found [http://localhost/user/newweight]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-03 13:06:36) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 59ms (View: 8, DB: 9) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-03 13:07:00) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 50ms (View: 40, DB: 2) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-07-03 13:07:06) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 3ms (DB: 1) | 302 Found [http://localhost/user/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-03 13:07:06) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-07-03 13:07:17) [POST]
+  Parameters: {"authenticity_token"=>"I+AvW+x6DDW6LHmPooSXAUR1C0N208xtFiJpkIfnx8g=", "userform"=>{"email"=>"admin@dieteaser.com", "password"=>"admin"}}
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'admin@dieteaser.com' and password = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 36ms (DB: 6) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-03 13:07:17) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'admin@dieteaser.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 53ms (View: 6, DB: 11) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-03 13:07:22) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 19ms (View: 7, DB: 3) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-07-03 13:07:56) [GET]
+  [4;36;1mArticle Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/application
+Rendering articles/new
+Completed in 50ms (View: 37, DB: 4) | 200 OK [http://localhost/articles/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-03 13:09:35) [GET]
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 23ms (View: 11, DB: 4) | 200 OK [http://localhost/index/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#logout (for 127.0.0.1 at 2010-07-03 13:09:58) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 4ms (DB: 1) | 302 Found [http://localhost/user/logout]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-03 13:09:58) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 8ms (View: 6, DB: 2) | 200 OK [http://localhost/user/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-03 13:10:00) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 24ms (View: 21, DB: 1) | 200 OK [http://localhost/user/signup]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-03 13:10:18) [POST]
+  Parameters: {"authenticity_token"=>"cWdzwbyvkn1QvqZrTxaPWuxiTuOkt8D0yxUOjCYsjlg=", "userform"=>{"firstname"=>"shfhsd", "email"=>"admin@dieteaser.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"3", "height_cm"=>"89", "weight_lb"=>"989", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>"sdfisdjf"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@dieteaser.com') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#authenticate_new_user (for 127.0.0.1 at 2010-07-03 13:15:58) [POST]
+  Parameters: {"authenticity_token"=>"cWdzwbyvkn1QvqZrTxaPWuxiTuOkt8D0yxUOjCYsjlg=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"3", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+
+SyntaxError (C:/Users/Steve/Desktop/easer/app/controllers/user_controller.rb:109: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-03 13:16:53) [POST]
+  Parameters: {"authenticity_token"=>"cWdzwbyvkn1QvqZrTxaPWuxiTuOkt8D0yxUOjCYsjlg=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"3", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Rendering template within layouts/application
+Rendering user/signup
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/user_controller.rb:65:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-03 13:18:00) [POST]
+  Parameters: {"authenticity_token"=>"cWdzwbyvkn1QvqZrTxaPWuxiTuOkt8D0yxUOjCYsjlg=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"3", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 21ms (DB: 1) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-03 13:18:00) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 24ms (View: 21, DB: 1) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-03 13:18:03) [POST]
+  Parameters: {"authenticity_token"=>"cWdzwbyvkn1QvqZrTxaPWuxiTuOkt8D0yxUOjCYsjlg=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"3", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 21ms (DB: 2) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-03 13:18:03) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 22ms (View: 19, DB: 1) | 200 OK [http://localhost/user/signup]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-03 13:18:39) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 25ms (View: 22, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-03 13:18:43) [POST]
+  Parameters: {"authenticity_token"=>"cWdzwbyvkn1QvqZrTxaPWuxiTuOkt8D0yxUOjCYsjlg=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"3", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-03 13:18:43) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-04 16:54:54) [GET]
+  [4;36;1mArticle Load (17.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 3829ms (View: 3801, DB: 20) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-04 16:55:00) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 24ms (View: 21, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 16:55:04) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+Redirected to http://localhost:3000/tools/
+Completed in 4ms (DB: 1) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-04 16:55:04) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 16:55:09) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+Redirected to http://localhost:3000/tools/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-04 16:55:09) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 16:56:24) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+Redirected to http://localhost:3000/tools/
+Completed in 4ms (DB: 1) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-04 16:56:24) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+
+ActionView::TemplateError (undefined local variable or method `error' for #<ActionView::Base:0x4ddd940>) on line #31 of app/views/layouts/application.html.erb:
+28:     </br>
+29: 
+30: <p style="color: green"><%= notice %></p>
+31: <p style="color: red"><%= error %></p>
+32: 
+33: <%= yield %>
+34: 
+
+    app/views/layouts/application.html.erb:31
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (120.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-04 16:57:43) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 26ms (View: 24, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 16:57:47) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+Redirected to http://localhost:3000/tools/
+Completed in 2ms (DB: 1) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-04 16:57:47) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#calculate (for 127.0.0.1 at 2010-07-04 16:59:12) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+
+SyntaxError (C:/Users/Steve/Desktop/easer/app/controllers/tools_controller.rb:18: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (101.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 16:59:27) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+
+NoMethodError (undefined method `blank' for "":String):
+  app/controllers/tools_controller.rb:5:in `calculate'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 17:00:12) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+
+NoMethodError (undefined method `blank' for "":String):
+  app/controllers/tools_controller.rb:5:in `calculate'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (134.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 17:00:37) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+
+NoMethodError (undefined method `blank' for "":String):
+  app/controllers/tools_controller.rb:5:in `calculate'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (88.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 17:01:14) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+
+NoMethodError (undefined method `blank' for "":String):
+  app/controllers/tools_controller.rb:5:in `calculate'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (90.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 17:01:41) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+Redirected to http://localhost:3000/tools/
+Completed in 3ms (DB: 1) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-04 17:01:42) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 90ms (View: 88, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 17:01:45) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+Redirected to http://localhost:3000/tools/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-04 17:01:45) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 17:01:48) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+Redirected to http://localhost:3000/tools/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-04 17:01:48) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-04 17:02:06) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "toolsform"=>{"weight_lb"=>"", "height_cm"=>""}}
+
+NoMethodError (undefined method `add' for nil:NilClass):
+  app/controllers/tools_controller.rb:6:in `calculate'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (99.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-04 17:03:00) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 43ms (View: 28, DB: 7) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-07-04 17:03:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 87ms (View: 23, DB: 3) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-04 17:03:22) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 55ms (View: 42, DB: 5) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-04 17:03:23) [GET]
+Redirected to http://localhost:3000/user/login
+Completed in 4ms (DB: 1) | 302 Found [http://localhost/user/mypage]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-04 17:03:23) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 25ms (View: 23, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-07-04 17:03:28) [POST]
+  Parameters: {"authenticity_token"=>"dWs09Lht3LpvIUHrjeQc2m1S0ZFo0oM6BRvlD7aFCJk=", "userform"=>{"email"=>"", "password"=>""}}
+  [4;36;1mUser Columns (14.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = '' and password = '') LIMIT 1[0m
+Redirected to http://localhost:3000/user/login
+Completed in 41ms (DB: 16) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-04 17:03:29) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-04 17:04:09) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 24ms (View: 12, DB: 4) | 200 OK [http://localhost/index/]
