@@ -1,6 +1,7 @@
 class UserController < ApplicationController
 require 'bmi'
 require 'bmr'
+require 'model_validation'
 
   def authenticate
           @user = User.new(params[:userform])
@@ -57,40 +58,38 @@ require 'bmr'
 
       def authenticate_new_user
         all_users = User.find(:all, :conditions => {:email => params[:userform][:email]})
+
+        validation = ModelValidation.new
+
         if !all_users.empty?
-          flash[:notice] = "we already have that email address sorry"
-          render :action => 'signup'
-          return
+          validation.add_validation_message("we already have that email address")
         end
 
        if params[:userform][:weight_lb].blank?
-        flash[:notice] = 'You must give a weight'
-        redirect_to :action => 'signup'
-        return
+        validation.add_validation_message('You must give a weight')
        end
 
         if params[:userform][:height_cm].blank?
-        flash[:notice] = 'You must give a height'
-        redirect_to :action => 'signup'
-        return
+        validation.add_validation_message('You must give a height')
         end
 
         if params[:userform][:firstname].blank?
-        flash[:notice] = 'You must give a first name'
-        redirect_to :action => 'signup'
-        return
+        validation.add_validation_message('You must give a first name')
+
         end
 
         if params[:userform][:password].blank? ||  params[:userform_confirm][:password_two].blank?
-        flash[:notice] = 'You must give a password'
-        redirect_to :action => 'signup'
-        return
+        validation.add_validation_message('You must give a password')
         end
 
-        if params[:userform][:password] != params[:userform_confirm][:password_two]
-        flash[:notice] = 'Your passwords do not match'
-        redirect_to :action => 'signup'
-        return
+        #if params[:userform][:password] != params[:userform_confirm][:password_two]
+        #validation.add_validation_message('Your passwords do not match')
+        #end
+
+        if !validation.is_valid?
+          flash[:notice] = validation.formatted_messages
+          redirect_to :action=> 'signup'
+          return
         end
 
         params[:userform][:ip] = request.remote_ip

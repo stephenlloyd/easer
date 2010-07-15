@@ -41856,3 +41856,565 @@ Rendering template within layouts/application
 Rendering index/index
   [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
 Completed in 24ms (View: 12, DB: 4) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (71.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-08 15:15:40) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5418ms (View: 5417, DB: 92) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-07-08 15:15:47) [POST]
+  Parameters: {"authenticity_token"=>"gDOqmiw3QnE5g3i3jZnQWy1BHvbH47dHPcNer1uKL/c=", "userform"=>{"password"=>"test", "email"=>"test@test.com"}}
+  [4;36;1mUser Columns (201.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (8.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 224ms (DB: 209) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-08 15:15:47) [GET]
+  [4;36;1mWeight Load (13.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 125ms (View: 15, DB: 18) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-08 15:15:51) [GET]
+  [4;36;1mArticle Load (8.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 30ms (View: 13, DB: 10) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-07-08 15:15:52) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-08 15:15:53) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-08 15:15:55) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 31ms (View: 7, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-08 15:15:56) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-08 15:15:57) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 22ms (View: 14, DB: 2) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-08 15:15:58) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 17ms (View: 8, DB: 2) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-08 15:16:01) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 16ms (View: 8, DB: 3) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2010-07-08 15:16:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering articles/show
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://localhost/articles/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-08 15:16:09) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 15ms (View: 7, DB: 4) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (21.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-14 15:57:16) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 5483ms (View: 5481, DB: 37) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-07-14 16:02:37) [POST]
+  Parameters: {"authenticity_token"=>"B85Icga0fimXP4y3BWAilAKQ+p/JH7FdxGnjun8T2Bg=", "userform"=>{"password"=>"test", "email"=>"test"}}
+  [4;36;1mUser Columns (300.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (36.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/login
+Completed in 349ms (DB: 336) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#login (for 127.0.0.1 at 2010-07-14 16:02:37) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/user/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate (for 127.0.0.1 at 2010-07-14 16:02:44) [POST]
+  Parameters: {"authenticity_token"=>"B85Icga0fimXP4y3BWAilAKQ+p/JH7FdxGnjun8T2Bg=", "userform"=>{"password"=>"test", "email"=>"test@test.com"}}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (email = 'test@test.com' and password = 'test') LIMIT 1[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 16ms (DB: 4) | 302 Found [http://localhost/user/authenticate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-14 16:02:44) [GET]
+  [4;36;1mWeight Load (21.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 156ms (View: 22, DB: 25) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#newweight (for 127.0.0.1 at 2010-07-14 16:02:51) [POST]
+  Parameters: {"authenticity_token"=>"B85Icga0fimXP4y3BWAilAKQ+p/JH7FdxGnjun8T2Bg=", "updateform"=>{"weight_lb"=>"180"}}
+  [4;36;1mWeight Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mWeight Create (52.0ms)[0m   [0;1mINSERT INTO `weights` (`updated_at`, `weight_lb`, `email`, `created_at`) VALUES('2010-07-14 15:02:51', 180, 'test@test.com', '2010-07-14 15:02:51')[0m
+  [4;35;1mSQL (20.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user/mypage
+Completed in 86ms (DB: 74) | 302 Found [http://localhost/user/newweight]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-14 16:02:51) [GET]
+  [4;36;1mWeight Load (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 31ms (View: 7, DB: 5) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-14 16:02:55) [GET]
+  [4;36;1mArticle Load (9.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 36ms (View: 20, DB: 11) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-14 16:02:59) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 22ms (View: 12, DB: 4) | 200 OK [http://localhost/index/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#index (for 127.0.0.1 at 2010-07-14 16:03:02) [GET]
+Rendering template within layouts/application
+Rendering diet/index
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://localhost/diet/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DietController#mydiet (for 127.0.0.1 at 2010-07-14 16:03:04) [GET]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mWeight Load (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mWeight Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `weights`[0m
+Rendering template within layouts/application
+Rendering diet/mydiet
+Completed in 32ms (View: 9, DB: 7) | 200 OK [http://localhost/diet/mydiet]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-14 16:03:07) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#calculate (for 127.0.0.1 at 2010-07-14 16:03:14) [POST]
+  Parameters: {"toolsform"=>{"height_cm"=>"80", "weight_lb"=>"180"}, "authenticity_token"=>"B85Icga0fimXP4y3BWAilAKQ+p/JH7FdxGnjun8T2Bg="}
+Redirected to http://localhost:3000/tools/
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tools/calculate]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ToolsController#index (for 127.0.0.1 at 2010-07-14 16:03:14) [GET]
+Rendering template within layouts/application
+Rendering tools/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tools/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-14 16:03:18) [GET]
+  [4;36;1mWeight Load (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 33ms (View: 8, DB: 6) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-14 16:03:19) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 16ms (View: 7, DB: 4) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#mypage (for 127.0.0.1 at 2010-07-14 16:03:20) [GET]
+  [4;36;1mWeight Load (1.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') LIMIT 1[0m
+  [4;36;1mWeight Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `weights`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `weights` WHERE (`weights`.`email` = 'test@test.com') ORDER BY updated_at ASC[0m
+Rendering template within layouts/application
+Rendering user/mypage
+Completed in 35ms (View: 8, DB: 8) | 200 OK [http://localhost/user/mypage]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-14 16:03:25) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 16ms (View: 8, DB: 2) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-15 15:01:22) [GET]
+  [4;36;1mArticle Load (78.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 2305ms (View: 2211, DB: 88) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2010-07-15 15:16:50) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering index/index
+  [4;35;1mArticle Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 13ms (View: 5, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-15 15:16:54) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 79ms (View: 77, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:16:57) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;36;1mUser Load (114.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 233ms (View: 10, DB: 114) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:17:09) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"xvffgdf", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'xvffgdf') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-15 15:17:09) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:17:23) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"180", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:17:32) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"testdfdf.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"180", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'testdfdf.com') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-15 15:17:32) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:20:48) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 21ms (View: 11, DB: 0) | 200 OK [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:50:24) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+
+NoMethodError (undefined method `<=' for []:Array):
+  app/models/model_validation.rb:12:in `add_validation_message'
+  app/controllers/user_controller.rb:65:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:53:10) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+
+NoMethodError (undefined method `render_to' for #<UserController:0x4ad8320>):
+  app/controllers/user_controller.rb:91:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:55:04) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+
+NoMethodError (undefined method `<=' for nil:NilClass):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:57:10) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+
+NoMethodError (undefined method `<=' for nil:NilClass):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:57:32) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+
+NoMethodError (undefined method `<=' for nil:NilClass):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:57:58) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+
+NoMethodError (undefined method `<=' for nil:NilClass):
+  app/controllers/user_controller.rb:90:in `authenticate_new_user'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:58:32) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-15 15:58:32) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 52ms (View: 51, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-15 15:59:00) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/user/signup]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#authenticate_new_user (for 127.0.0.1 at 2010-07-15 15:59:02) [POST]
+  Parameters: {"authenticity_token"=>"PBlGH55rtddCzc64ozzwOtjLFpZWsa3c7+Oa49hWhxY=", "userform"=>{"firstname"=>"", "email"=>"test@test.com", "password"=>"test", "dob(1i)"=>"1995", "dob(2i)"=>"7", "dob(3i)"=>"15", "height_cm"=>"", "weight_lb"=>"", "sex"=>"1", "opt_in"=>"0"}, "userform_confirm"=>{"password_two"=>""}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'test@test.com') [0m
+Redirected to http://localhost:3000/user/signup
+Completed in 11ms (DB: 2) | 302 Found [http://localhost/user/authenticate_new_user]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserController#signup (for 127.0.0.1 at 2010-07-15 15:59:02) [GET]
+Rendering template within layouts/application
+Rendering user/signup
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/user/signup]
