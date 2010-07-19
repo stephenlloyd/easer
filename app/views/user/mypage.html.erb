@@ -1,5 +1,11 @@
+<% if flash[:updated] %>
+<div style="font-family:'Trebuchet MS'; color:#33ff33; font-size:14px;">
+<%= flash[:notice] %>
+</div>
+<% end %>
+
 <% if flash[:notice] %>
-<div style="font-family:'Trebuchet MS'; color:#33ff00; font-size:14px;">
+<div style="font-family:'Trebuchet MS'; color:#FF0000; font-size:14px;">
 <%= flash[:notice] %>
 </div>
 <% end %>

@@ -69,22 +69,37 @@ require 'model_validation'
         validation.add_validation_message('You must give a weight')
        end
 
+       if params[:userform][:email].blank? || params[:userform][:email].to_s.length < 9 || !params[:userform][:email].to_s.include?("@")
+        validation.add_validation_message('You must give valid email e.g. "yourname@domain.com"')
+       end
+
         if params[:userform][:height_cm].blank?
         validation.add_validation_message('You must give a height')
         end
 
-        if params[:userform][:firstname].blank?
-        validation.add_validation_message('You must give a first name')
-
+        if !params[:userform][:height_cm].blank? && params[:userform][:height_cm].to_i < 100 || params[:userform][:height_cm].to_i > 250
+        validation.add_validation_message('Your height must be between 100 and 250cm')
         end
 
-        if params[:userform][:password].blank? ||  params[:userform_confirm][:password_two].blank?
+        if !params[:userform][:weight_lb].blank? && params[:userform][:weight_lb].to_i < 72 || params[:userform][:weight_lb].to_i > 360
+        validation.add_validation_message('Please check your weight and re-enter')
+        end
+
+        if params[:userform][:firstname].blank?
+        validation.add_validation_message('You must give a first name')
+        end
+
+        if params[:userform][:password].blank?
         validation.add_validation_message('You must give a password')
         end
 
-        #if params[:userform][:password] != params[:userform_confirm][:password_two]
-        #validation.add_validation_message('Your passwords do not match')
-        #end
+        if !params[:userform][:password].blank? && params[:userform][:password].to_s.length < 5
+          validation.add_validation_message('Your password must be over 5 characters in length')
+        end
+        
+        if params[:userform][:password] != params[:userform_confirm][:password_two]
+         validation.add_validation_message('Your passwords do not match')
+        end
 
         if !validation.is_valid?
           flash[:notice] = validation.formatted_messages
@@ -107,9 +122,26 @@ require 'model_validation'
     end
   
     def newweight
+      
+      validation = ModelValidation.new
+
+        if !params[:updateform][:weight_lb].blank? && params[:updateform][:weight_lb].to_i < 72 || params[:updateform][:weight_lb].to_i > 360
+          validation.add_validation_message('Please check your weight and re-enter')
+        end
+
+        if params[:updateform][:weight_lb].blank?
+         validation.add_validation_message('You must give a weight')
+        end
+        
+        if !validation.is_valid?
+          flash[:notice] = validation.formatted_messages
+          redirect_to :action=> 'mypage'
+          return
+        end
+
       @weight =  Weight.new(:email => session[:user_id], :weight_lb =>params[:updateform][:weight_lb])
       @weight.save
-      flash[:notice] = "updated"
+      flash[:updated] = "updated"
       redirect_to :action=> 'mypage'
     end
 

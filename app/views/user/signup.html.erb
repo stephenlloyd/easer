@@ -1,3 +1,9 @@
+<% if flash[:updated] %>
+<div style="font-family:'Trebuchet MS'; color:#33ff33; font-size:14px;">
+<%= flash[:notice] %>
+</div>
+<% end %>
+
 <% if flash[:notice] %>
 <div style="font-family:'Trebuchet MS'; color:#FF0000; font-size:14px;">
 <%= flash[:notice] %>
@@ -12,8 +18,10 @@
 <%= text_field("userform", "email",:size=>"20" )%>
 <br>Password:
 <%= password_field("userform", "password",:size=>"20" )%>
+
 <br>Confirm Password:
 <%= password_field("userform_confirm", "password_two",:size=>"20" )%>
+
 <br>Date of Birth:
 <%= date_select("userform", "dob",:size=>"20", :end_year=>Date.today.year-75, :start_year=>Date.today.year-15)%>
 <br>Height cm:
