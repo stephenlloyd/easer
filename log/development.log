@@ -44460,3 +44460,23 @@ ActionController::RoutingError (No route matches "/public/favicon.ico" with {:me
   C:/Ruby191/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-19 10:49:39) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 44ms (View: 31, DB: 3) | 200 OK [http://localhost/articles/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-07-19 10:49:44) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/application
+Rendering articles/index
+  [4;35;1mArticle Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 15ms (View: 8, DB: 3) | 200 OK [http://localhost/articles/]
