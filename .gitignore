@@ -20,5 +20,4 @@ artifacts
 .idea
 *.orig
 database.log
-development.log
 workspace.xml
