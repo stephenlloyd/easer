@@ -9,32 +9,37 @@
   <%= stylesheet_link_tag 'scaffold' %>
 </head>
 <link rel="shortcut icon" href="/favicon.ico" />
-<%= link_to image_tag("logo-dummy.png", :border=>0), :action => '' %>
+<%= link_to image_tag("logo-dummy.png", :border=>0), :controller => "index",:action => '' %>
+
 <body>
-    <% if !session[:user_id] %>
-        <%= link_to "sign up",:controller => "user", :action => "signup" %>
-        <%= link_to "login",:controller => "user", :action => "login" %>
-    <% else %>
-        hello <strong><%=session[:user_id]%></strong>.
+<div class="navigation">
+    <ul>
+        <li class="home"><a href="/">Home</a></li>
+        <li class="utilities"><a class="on" href="/diet/">Diets</a></li>
+        <li class="tools"><a href="/tools/">Tools</a></li>
+        <li class="mypage"><a href="/user/mypage">My Account</a></li>
+        <li class="news"><a href="/articles">News</a></li>
+    </ul>
+</div>
+<div class="user-status">
+    <% if session[:user_id] %>
+        <p> hello <strong><%=session[:user_id]%></strong>. </p>
         <%= link_to "my account",:controller => "user", :action => "mypage" %>
         <%= link_to "logout",:controller => "user", :action => "logout" %>
-    <% end %>
 
-    <br>
-    <br>
-    <%= link_to "Home",:controller => "index", :action => "" %>
-    <%= link_to "Diets",:controller => "diet", :action => "" %>
-    <%= link_to "tools",:controller => "tools", :action => "" %>
-    <%= link_to "My account",:controller => "user", :action => "mypage" %>
-    <%= link_to "News",:controller => "articles", :action => "" %>
-    </br>
+    <% else %>
+        <%= link_to "sign up",:controller => "user", :action => "signup" %>
+        <%= link_to "login",:controller => "user", :action => "login" %>
+    <% end %>
+</div>
+
 
 <%= yield %>
 
 
-<br>
-<br>
-footer
+<div class="footer">
+<p>footer</p>
+ </div>
 
 </body>
 </html>
