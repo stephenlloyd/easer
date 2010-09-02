@@ -6,40 +6,44 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>DietEaser</title>
-  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'layout' %>
 </head>
 <link rel="shortcut icon" href="/favicon.ico" />
-<%= link_to image_tag("logo-dummy.png", :border=>0), :controller => "index",:action => '' %>
 
 <body>
-<div class="navigation">
-    <ul>
-        <li class="home"><a href="/">Home</a></li>
-        <li class="utilities"><a class="on" href="/diet/">Diets</a></li>
-        <li class="tools"><a href="/tools/">Tools</a></li>
-        <li class="mypage"><a href="/user/mypage">My Account</a></li>
-        <li class="news"><a href="/articles">News</a></li>
-    </ul>
+<div id="wrapper">
+<div id="header">
+  <%= link_to image_tag("logo-dummy.png", :border=>0), :controller => "index",:action => '' %>
+      <div class="user-status">
+        <% if session[:user_id] %>
+            <p> hello <strong><%=session[:user_id]%></strong>. </p>
+            <%= link_to "my account",:controller => "user", :action => "mypage" %>
+            <%= link_to "logout",:controller => "user", :action => "logout" %>
+
+        <% else %>
+            <%= link_to "sign up",:controller => "user", :action => "signup" %>
+            <%= link_to "login",:controller => "user", :action => "login" %>
+        <% end %>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li class="home"><a href="/">Home</a></li>
+            <li class="utilities"><a class="on" href="/diet/">Diets</a></li>
+            <li class="tools"><a href="/tools/">Tools</a></li>
+            <li class="mypage"><a href="/user/mypage">My Account</a></li>
+            <li class="news"><a href="/articles">News</a></li>
+        </ul>
+    </div>
 </div>
-<div class="user-status">
-    <% if session[:user_id] %>
-        <p> hello <strong><%=session[:user_id]%></strong>. </p>
-        <%= link_to "my account",:controller => "user", :action => "mypage" %>
-        <%= link_to "logout",:controller => "user", :action => "logout" %>
 
-    <% else %>
-        <%= link_to "sign up",:controller => "user", :action => "signup" %>
-        <%= link_to "login",:controller => "user", :action => "login" %>
-    <% end %>
+<div id="content">
+    <%= yield %>
 </div>
 
 
-<%= yield %>
-
-
-<div class="footer">
+<div id="footer">
 <p>footer</p>
- </div>
-
+</div>
+</div>
 </body>
 </html>

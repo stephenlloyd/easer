@@ -1,0 +1,17 @@
+#wrapper { width:900px;  margin:0 auto;
+
+}
+#header {
+
+}
+#header .navigation{float:right; clear:right;}
+#header .navigation li{float:left; padding:5px; margin-top:40px;}
+#header .navigation ul{list-style-type:none;}
+#header .navigation a:hover{ color:pink;}
+#header .user-status{float:right;}
+
+#content {
+  border:1px solid black; padding:10px 10px 10px 10px 
+}
+
+#footer {}
